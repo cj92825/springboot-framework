@@ -1,0 +1,44 @@
+buildscript {
+    ext {
+        spring_boot_version='2.0.0.RELEASE'
+    }
+    repositories {
+        maven { url = 'https://maven.aliyun.com/repository/central' }
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_version"
+    }
+}
+allprojects {
+    group 'pers.cj.framework'
+    version '1.0-SNAPSHOT'
+
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+    sourceCompatibility = 1.8
+
+    repositories {
+        maven { url = 'https://maven.aliyun.com/repository/central' }
+        mavenCentral()
+    }
+
+    dependencies {
+        compile('org.springframework.boot:spring-boot-starter')
+        compile('org.springframework.boot:spring-boot-starter-web')
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+
+}
+
+
+
+
+
+
+
