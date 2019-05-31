@@ -6,6 +6,7 @@ buildscript {
         mybatis_plus_boot_version = '3.1.0'
         freemarker_version = '2.3.28'
         fastjson_version='1.2.56'
+        swagger_version='2.6.1'
     }
     repositories {
         maven { url = 'https://maven.aliyun.com/repository/public' }

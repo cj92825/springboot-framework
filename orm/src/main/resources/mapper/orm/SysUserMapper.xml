@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.cj.framework.orm.mapper.SysUserMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        create_time,
+        create_by,
+        update_time,
+        update_by,
+        deleted,
+        id, account, username, password, salt, phone, email, remark
+    </sql>
+
+</mapper>
