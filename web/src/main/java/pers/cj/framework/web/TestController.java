@@ -70,4 +70,15 @@ public class TestController {
 //        return sysUser;
         return ResponseUtil.success(sysUser);
     }
+    @GetMapping("/error1")
+    public Object error1(){
+        try{
+            int a=0;
+            int b=1/0;
+        }catch (Exception e){
+            System.out.println(e.toString());
+            throw e;
+        }
+        return "aa";
+    }
 }

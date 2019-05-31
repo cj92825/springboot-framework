@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import java.util.Date;
 
 /**
- * @Description TODO
+ * @Description 返回结果处理类
  * @Author chenj
  * @Date 2019/5/31 14:39
  **/
@@ -21,5 +21,10 @@ public class ResponseUtil {
     public static ResponseEntity<?> success() {
         return ResponseEntity.ok(new ResponseDto());
     }
-
+    public static ResponseEntity<?> fail() {
+        return ResponseEntity.ok(new ResponseDto().setCode(201).setMsg("请求异常"));
+    }
+    public static ResponseEntity<?> fail(String msg) {
+        return ResponseEntity.ok(new ResponseDto().setCode(201).setMsg(msg));
+    }
 }
