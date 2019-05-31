@@ -9,7 +9,8 @@ sourceCompatibility = 1.8
 
 dependencies {
     implementation project(":orm")
-    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation project(":api")
+   
 }
 
 

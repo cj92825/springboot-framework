@@ -38,6 +38,7 @@ subprojects {
 
     dependencies {
         implementation "org.springframework.boot:spring-boot-starter"
+        implementation "org.springframework.boot:spring-boot-starter-web"
         implementation "org.projectlombok:lombok:1.18.2"
         implementation "com.alibaba:fastjson:${fastjson_version}"
 //        //数据库相关依赖
