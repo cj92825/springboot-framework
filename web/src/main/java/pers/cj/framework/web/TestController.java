@@ -1,7 +1,12 @@
 package pers.cj.framework.web;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pers.cj.framework.orm.entity.SysUser;
+import pers.cj.framework.orm.service.ISysUserService;
 
 /**
  * @Description Controller测试类
@@ -9,10 +14,44 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date 2019/5/28 17:56
  **/
 @RestController
+//@MapperScan("pers.cj.framework.*.mapper")//指定mapper包路径
 public class TestController {
+    @Autowired
+    ISysUserService iSysUserService;
+
+    @Value("${mybatis.logic}")
+    Boolean value;
 
     @GetMapping("/")
     public String test(){
         return "hello";
     }
+
+    @GetMapping("/query")
+    public Object testMybatis(){
+        return iSysUserService.list();
+    }
+    @GetMapping("/delete")
+    public Object testLogicDelete(){
+        return iSysUserService.removeById(1L);
+    }
+
+    @GetMapping("/pageTest")
+    public Object testLogicDelete(Integer currentPage){
+        SysUser sysUser=new SysUser();
+        Page<SysUser> page=new Page<>(currentPage,1);
+        return iSysUserService.page(page);
+    }
+
+    @GetMapping("/insert")
+    public Object insert(){
+        SysUser sysUser=new SysUser().setAccount("aaa");
+
+        return iSysUserService.save(sysUser);
+    }
+    @GetMapping("/test")
+    public Object test1(){
+        return value;
+    }
+
 }

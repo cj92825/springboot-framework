@@ -3,7 +3,11 @@
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="springboot.main" target="1.8" />
+      <module name="springboot.orm.main" target="1.8" />
+      <module name="springboot.orm.test" target="1.8" />
       <module name="springboot.test" target="1.8" />
+      <module name="springboot.web.main" target="1.8" />
+      <module name="springboot.web.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

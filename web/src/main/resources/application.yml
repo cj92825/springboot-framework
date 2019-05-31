@@ -1,2 +1,20 @@
+spring:
+  profiles:
+    active: dev
+    include: orm
+
+---
+spring:
+  profiles: dev
+  application:
+    name: springboot-framework
 server:
-          port: 10010
+  port: 10010
+
+---
+spring:
+  profiles: prod
+  application:
+    name: springboot-framework
+server:
+  port: 10010
