@@ -54,7 +54,6 @@ public class MybatisPlusConfig {
      * 若还有自定义的填充器，则不再注入
      */
     @Bean
-    @Order()
     @ConditionalOnMissingBean
     public MetaObjectHandler metaObjectHandler() {
         return new MyMetaObjectHandler();

@@ -2,6 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="pers.cj.framework.springboot.orm.main" target="1.8" />
+      <module name="pers.cj.framework.springboot.orm.test" target="1.8" />
+      <module name="pers.cj.framework.springboot.web.main" target="1.8" />
+      <module name="pers.cj.framework.springboot.web.test" target="1.8" />
+      <module name="springboot.api.main" target="1.8" />
+      <module name="springboot.api.test" target="1.8" />
+      <module name="springboot.common.main" target="1.8" />
+      <module name="springboot.common.test" target="1.8" />
       <module name="springboot.main" target="1.8" />
       <module name="springboot.orm.main" target="1.8" />
       <module name="springboot.orm.test" target="1.8" />

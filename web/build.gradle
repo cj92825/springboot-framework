@@ -10,7 +10,7 @@ sourceCompatibility = 1.8
 dependencies {
     implementation project(":orm")
     implementation project(":api")
-   
+    implementation project(":common")
 }
 
 

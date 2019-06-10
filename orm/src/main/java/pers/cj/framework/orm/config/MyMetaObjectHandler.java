@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  * @Description 公共字段自动填充
- * 若需要其他自定义操作，可自行写类继承MetaObjectHandler然后注入,@Order值需要小于Integer.MAX_VALUE
+ * 若需要其他自定义操作，可自行写类继承MetaObjectHandler然后注入
  * @Author chenj
  * @Date 2019/5/30 15:38
  **/

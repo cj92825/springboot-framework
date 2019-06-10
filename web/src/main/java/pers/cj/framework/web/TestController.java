@@ -4,6 +4,11 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,6 +28,10 @@ public class TestController {
     @Autowired
     ISysUserService iSysUserService;
 
+    @Autowired
+    RedisTemplate<String,String> redisTemplate;
+    @Autowired
+    StringRedisTemplate stringRedisTemplate;
     @Value("${mybatis.logic}")
     Boolean value;
 
@@ -71,14 +80,31 @@ public class TestController {
         return ResponseUtil.success(sysUser);
     }
     @GetMapping("/error1")
-    public Object error1(){
+    public Object error1() throws HttpRequestMethodNotSupportedException {
         try{
             int a=0;
             int b=1/0;
         }catch (Exception e){
             System.out.println(e.toString());
-            throw e;
+            throw new HttpRequestMethodNotSupportedException("test");
         }
         return "aa";
+    }
+
+    @GetMapping("/redis")
+    public Object redis(){
+        redisTemplate.opsForValue().set("test1","test1");
+        stringRedisTemplate.opsForValue().set("test2","test2");
+        return "aaa";
+    }
+
+    @GetMapping("/cacheSelect")
+    public SysUser cacheSelect(){
+        return iSysUserService.getById(9L);
+    }
+
+    @GetMapping("/cacheUpdate")
+    public Object cacheUpdate(){
+        return iSysUserService.updateById(new SysUser().setId(9L).setEmail("873328316@qq.com"));
     }
 }

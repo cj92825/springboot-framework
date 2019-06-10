@@ -1,10 +1,19 @@
 package pers.cj.framework.orm.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import org.apache.ibatis.reflection.wrapper.BaseWrapper;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.EnableCaching;
 import pers.cj.framework.orm.entity.SysUser;
 import pers.cj.framework.orm.mapper.SysUserMapper;
 import pers.cj.framework.orm.service.ISysUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
+
+import java.io.Serializable;
+import java.sql.Wrapper;
 
 /**
  * <p>
@@ -17,4 +26,21 @@ import org.springframework.stereotype.Service;
 @Service
 public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> implements ISysUserService {
 
+    @Cacheable(value = "sysUser",key = "#id")
+    @Override
+    public SysUser getById(Serializable id) {
+        return super.getById(id);
+    }
+
+    @CacheEvict(value = "sysUser",key = "#entity.id")
+    @Override
+    public boolean updateById(SysUser entity) {
+        return super.updateById(entity);
+    }
+
+
+    @Override
+    public SysUser getByUserName(String username) {
+        return getOne(new QueryWrapper<SysUser>().eq("username",username));
+    }
 }

@@ -2,4 +2,5 @@ rootProject.name = 'springboot'
 include 'web'
 include 'orm'
 include 'api'
+include 'common'
 

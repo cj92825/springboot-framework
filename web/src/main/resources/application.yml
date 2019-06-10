@@ -1,7 +1,12 @@
 spring:
   profiles:
     active: dev
-    include: orm
+    include: orm,cache
+
+logging:
+  file: spring.log
+  level:
+    root: info
 
 ---
 spring:

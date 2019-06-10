@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pers.cj.framework.springboot.iml" filepath="$PROJECT_DIR$/.idea/modules/pers.cj.framework.springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/orm/pers.cj.framework.springboot.orm.iml" filepath="$PROJECT_DIR$/.idea/modules/orm/pers.cj.framework.springboot.orm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/orm/pers.cj.framework.springboot.orm.main.iml" filepath="$PROJECT_DIR$/.idea/modules/orm/pers.cj.framework.springboot.orm.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/orm/pers.cj.framework.springboot.orm.test.iml" filepath="$PROJECT_DIR$/.idea/modules/orm/pers.cj.framework.springboot.orm.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/pers.cj.framework.springboot.web.iml" filepath="$PROJECT_DIR$/.idea/modules/web/pers.cj.framework.springboot.web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/pers.cj.framework.springboot.web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/web/pers.cj.framework.springboot.web.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/pers.cj.framework.springboot.web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/web/pers.cj.framework.springboot.web.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springboot.iml" filepath="$PROJECT_DIR$/.idea/modules/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/springboot.api.iml" filepath="$PROJECT_DIR$/.idea/modules/api/springboot.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/springboot.api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/springboot.api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/springboot.api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/springboot.api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/springboot.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/springboot.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/springboot.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/springboot.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/springboot.common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/common/springboot.common.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/orm/springboot.orm.iml" filepath="$PROJECT_DIR$/.idea/modules/orm/springboot.orm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/orm/springboot.orm.main.iml" filepath="$PROJECT_DIR$/.idea/modules/orm/springboot.orm.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/orm/springboot.orm.test.iml" filepath="$PROJECT_DIR$/.idea/modules/orm/springboot.orm.test.iml" />

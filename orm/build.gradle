@@ -5,12 +5,13 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 dependencies {
+    
     implementation "com.alibaba:druid-spring-boot-starter:${druid_version}"
     implementation "mysql:mysql-connector-java:${mysql_connector_version}"
     implementation "org.springframework.boot:spring-boot-starter-jdbc"
     compile "com.baomidou:mybatis-plus-boot-starter:${mybatis_plus_boot_version}"
     compile "com.baomidou:mybatis-plus-generator:${mybatis_plus_boot_version}"
-    implementation "org.freemarker:freemarker:${freemarker_version}"
+    compile "org.freemarker:freemarker:${freemarker_version}"
     implementation "p6spy:p6spy:3.8.1"
 }
 
