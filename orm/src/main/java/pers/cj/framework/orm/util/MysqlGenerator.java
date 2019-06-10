@@ -55,7 +55,8 @@ public class MysqlGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName(scanner("模块名"));
+//        pc.setModuleName(scanner("模块名"));
+        pc.setModuleName("orm");
         String projectPath = System.getProperty("user.dir")+"/"+ pc.getModuleName();
         pc.setParent("pers.cj.framework");
         mpg.setPackageInfo(pc);

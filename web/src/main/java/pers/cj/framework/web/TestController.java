@@ -4,15 +4,13 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import pers.cj.framework.api.common.ResponseUtil;
+import pers.cj.framework.common.ResponseUtil;
 import pers.cj.framework.orm.entity.SysUser;
 import pers.cj.framework.orm.service.ISysUserService;
 
@@ -55,6 +53,7 @@ public class TestController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "currentPage", value = "当前页码", required = true, dataType = "Int",paramType = "query")
     })
+    @PreAuthorize("hasPermission('/pageTest','r')")
     @GetMapping("/pageTest")
     public Object testLogicDelete(Integer currentPage){
         SysUser sysUser=new SysUser();

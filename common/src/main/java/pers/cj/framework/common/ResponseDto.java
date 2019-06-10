@@ -1,4 +1,4 @@
-package pers.cj.framework.api.common;
+package pers.cj.framework.common;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;

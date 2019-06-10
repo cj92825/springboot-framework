@@ -2,22 +2,17 @@ package pers.cj.framework.common.security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 import javax.sql.DataSource;
-import java.util.function.Function;
 
 /**
  * @Description Security配置类
@@ -26,11 +21,19 @@ import java.util.function.Function;
  * 不用加@Configuration  了，EnableWebSecurity里面包含了
  **/
 @EnableWebSecurity
+@EnableRedisHttpSession
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     CustomUserDetailsService userDetailsService;
+
+    @Autowired
+    CustomAuthenticationFailureHandler customAuthenticationFailureHandler;
+    @Autowired
+    CustomAuthenticationSuccessHandler customAuthenticationSuccessHandler;
+    @Autowired
+    CustomAccessDeniedHandler customAccessDeniedHandler;
     @Autowired
     DataSource dataSource;
 
@@ -63,19 +66,26 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 // 如果有允许匿名的url，填在下面.antMatchers().permitAll()
+//                .antMatchers("/login/invalid").permitAll()//session过期跳转的url免登录
                 .anyRequest().authenticated()
                 .and()
                 // 设置登陆页
                 .formLogin().loginPage("/login")
                 // 设置登陆成功页
                 .defaultSuccessUrl("/showHome")
-//                .failureHandler()
-                .failureUrl("/loginFail")
+                .successHandler(customAuthenticationSuccessHandler)
+                .failureHandler(customAuthenticationFailureHandler)
+//                .failureUrl("/loginFail")
                 .permitAll()
-                .and()
-                .logout().permitAll()
+                .and().exceptionHandling().accessDeniedHandler(customAccessDeniedHandler)
+                .and().logout().logoutUrl("/logout").deleteCookies("JSESSIONID").logoutSuccessUrl("/login")
                 // 自动登录
-                .and().rememberMe().tokenRepository(persistentTokenRepository()).tokenValiditySeconds(600).userDetailsService(userDetailsService);
+                .and().rememberMe().tokenRepository(persistentTokenRepository()).tokenValiditySeconds(600).userDetailsService(userDetailsService)
+                .and()
+                .sessionManagement().invalidSessionUrl("/login").maximumSessions(1)
+                .maxSessionsPreventsLogin(false)
+                .expiredSessionStrategy(new CustomExpiredSessionStrategy());// 当达到最大值时，是否保留已经登录的用户
+
 
         // 关闭CSRF跨域
         http.csrf().disable();

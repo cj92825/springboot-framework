@@ -20,7 +20,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * @Description 自定义UserDetailsService实现
+ * @Description 自定义UserDetailsService实现,从数据库中获取账户信息
  * @Author chenj
  * @Date 2019/6/4 15:50
  **/
@@ -47,7 +47,7 @@ public class CustomUserDetailsService  implements UserDetailsService {
         List<SysUserRole> userRoles=iSysUserRoleService.listByUserId(sysUser.getId());
         for (SysUserRole userRole : userRoles) {
             SysRole role = iSysRoleService.getById(userRole.getRoleId());
-            authorities.add(new SimpleGrantedAuthority(role.getName()));
+            authorities.add(new SimpleGrantedAuthority(role.getId().toString()));
         }
         return new User(sysUser.getUsername(),sysUser.getPassword(),authorities);
     }

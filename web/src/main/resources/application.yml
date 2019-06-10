@@ -2,11 +2,17 @@ spring:
   profiles:
     active: dev
     include: orm,cache
+  session:
+    store-type: redis
 
 logging:
   file: spring.log
   level:
     root: info
+server:
+  servlet:
+    session:
+      timeout: 600
 
 ---
 spring:
