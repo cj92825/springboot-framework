@@ -1,12 +1,11 @@
 package pers.cj.framework.common.security.config;
 
-import com.alibaba.fastjson.JSON;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;
 import pers.cj.framework.common.ResponseDto;
-import pers.cj.framework.common.security.util.JsonUtil;
+import pers.cj.framework.common.util.JsonUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -27,6 +26,6 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
         response.setStatus(HttpStatus.FORBIDDEN.value());
         response.setContentType("application/json;charset=utf-8");
         response.setHeader("Cache-Control", "no-cache");
-        response.getWriter().print(JsonUtil.toJson(new ResponseDto().setCode(HttpStatus.FORBIDDEN.value()).setMsg(accessDeniedException.getMessage())));
+        response.getWriter().print(JsonUtil.toJson(new ResponseDto().setHttpStatus(HttpStatus.FORBIDDEN).setMessage(accessDeniedException.getMessage())));
     }
 }

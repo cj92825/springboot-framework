@@ -2,24 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f567a1-8f2d-4547-950f-09954a63011e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomExpiredSessionStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustonPermissionEvaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/VerifyServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/util/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/aop/AnnotationLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/aop/AspectLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/sys/SysService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/sys/impl/SysServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/redis/util/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDecisionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomFilterInvocationSecurityMetadataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/util/RequestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/SysController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/common/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/common/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/GloablExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/GloablExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomExpiredSessionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomExpiredSessionStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/MyAuthenticationFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustonPermissionEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustonPermissionEvaluator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/util/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/util/MysqlGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/util/BCryptPasswordEncoderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/util/BCryptPasswordEncoderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/util/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/util/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/mapper/SysRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/mapper/SysRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysPermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysPermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysPermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysPermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/AuthTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/AuthTestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application-cache.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application-cache.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -178,82 +196,112 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/GloablExceptionHandler.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+            <state relative-caret-position="132">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#persistentTokenRepository#0;class#WebSecurityConfig#0" />
+                <element signature="e#3090#3183#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+              <folding>
+                <element signature="e#3266#3267#0" expanded="true" />
+                <element signature="e#3307#3308#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="648" column="93" selection-start-line="648" selection-start-column="93" selection-end-line="648" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/ObjectPostProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="154" column="46" selection-start-line="154" selection-start-column="46" selection-end-line="154" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/vote/ConsensusBased.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/vote/AffirmativeBased.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="61" column="28" lean-forward="true" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+              <folding>
+                <element signature="e#1311#1312#0" expanded="true" />
+                <element signature="e#1339#1340#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/vote/RoleVoter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="102" column="45" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDeniedHandler.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDecisionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="342">
+              <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1783#1784#0" expanded="true" />
+                <element signature="e#1810#1811#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.4.RELEASE/2fbf13b190d2b64c44f4235ff24038a1215cbf2d/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/vote/AbstractAccessDecisionManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.4.RELEASE/7dd842c0b8f141d4e7de926a5519aa28f0af33e2/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="116" column="43" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationFailureHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="27" column="47" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="47" />
+            <state relative-caret-position="379">
+              <caret line="79" column="41" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.4.RELEASE/2fbf13b190d2b64c44f4235ff24038a1215cbf2d/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="416" column="30" selection-start-line="416" selection-start-column="30" selection-end-line="416" selection-end-column="30" />
-              <folding>
-                <element signature="e#6497#6498#0" expanded="true" />
-                <element signature="e#6532#6533#0" expanded="true" />
+                <element signature="e#3134#3135#0" expanded="true" />
+                <element signature="e#3174#3175#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -271,36 +319,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>entityTableFieldAnnotationEnable</find>
-      <find>Open</find>
-      <find>log-im</find>
-      <find>underline_to_camel</find>
-      <find>lom</find>
-      <find>entityBuilderModel</find>
-      <find>globalConfig</find>
-      <find>isEntityBuilderModel</find>
-      <find>redis</find>
-      <find>initialCacheNames</find>
-      <find>CacheNames</find>
-      <find>login</find>
-      <find>lg</find>
-      <find>builder</find>
-      <find>defaultUserDetailsService</find>
-      <find>fail</find>
-      <find>userDetailsService</find>
-      <find>curr</find>
-      <find>read</find>
-      <find>targetId</find>
-      <find>401</find>
-      <find>INTERNAL_SERVER_ERROR</find>
-      <find>over</find>
-      <find>logoutUrl</find>
-      <find>403</find>
-      <find>无权访问不允许访问</find>
-      <find>handleExceptionInternal</find>
-      <find>PAGE_NOT_FOUND_LOG_CATEGORY</find>
-      <find>handleHttpRequestMethodNotSupported</find>
-      <find>pageNotFoundLogger</find>
+      <find>uthenticationProvider</find>
+      <find>Voter</find>
+      <find>supp</find>
+      <find>CustomAccessDecisionManager</find>
+      <find>DelegatingMethodSecurityMetadataSource</find>
+      <find>requestMap</find>
+      <find>FilterInvocationSecurityMetadataSource</find>
+      <find>AccessDecisionManager</find>
+      <find>afterPropertiesSet</find>
+      <find>invoke</find>
+      <find>invoked</find>
+      <find>ccessDecisionManager</find>
+      <find>FilterSecurityInterceptor</find>
+      <find>AffirmativeBased</find>
+      <find>SecurityInterceptor</find>
+      <find>filterSecurityInterceptor</find>
+      <find>securityMetadataSource</find>
+      <find>ccessDecisionManager.de</find>
+      <find>doc.</find>
+      <find>doc</find>
+      <find>addUser</find>
+      <find>grantPermissions</find>
+      <find>authenticationManager</find>
+      <find>accessDecisionManager</find>
+      <find>doFilter</find>
+      <find>getSecureObjectClass</find>
+      <find>getAttributes</find>
+      <find>obtainSecurityMetadataSource</find>
+      <find>CustomSecurityInterceptor</find>
+      <find>allowIfAllAbstainDecisions</find>
     </findStrings>
     <dirStrings>
       <dir>D:\study\framework\src\main\java</dir>
@@ -312,57 +360,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/resources/spy.properties" />
-        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/Swagger2.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/application-orm.yml" />
-        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/SwaggerConfigurer.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/common/ResponseDto.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebAutoConfiguration1.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebAutoConfiguration.java" />
-        <option value="$PROJECT_DIR$/web/build.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/config/MybatisPlusConfig.java" />
-        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/config/MyMetaObjectHandler.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/userServier.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/userServer.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/config/redisConfig.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/application-cache.yml" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/config/security/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/redis/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/static/home.html" />
-        <option value="$PROJECT_DIR$/orm/build.gradle" />
-        <option value="$PROJECT_DIR$/api/build.gradle" />
-        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysUserRoleService.java" />
-        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserRoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysUserService.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/util/BCryptPasswordEncoderUtil.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/static/login.html" />
-        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/common/ResponseUtil.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/MyAuthenticationFailureHandler.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseDto.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/VerifyServlet.java" />
         <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/util/MysqlGenerator.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysPermissionService.java" />
-        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysPermissionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustonPermissionEvaluator.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/TestController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/AuthTestController.java" />
-        <option value="$PROJECT_DIR$/common/build.gradle" />
         <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/customAccessDeniedHandler.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/util/JsonUtil.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomExpiredSessionStrategy.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseUtil.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/GloablExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDeniedHandler.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/util/RequestUtil.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseUtil.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationFailureHandler.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDeniedHandler.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/redis/util/RedisService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/aop/AnnotationLog.java" />
+        <option value="$PROJECT_DIR$/common/build.gradle" />
+        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/util/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/aop/AspectLog.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysPermissionService.java" />
+        <option value="$PROJECT_DIR$/spring.log.2019-06-10.027114000619800.tmp" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustonPermissionEvaluator.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/application-cache.yml" />
+        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/admin/AdminService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/admin/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/TestController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/admin/AdminController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/admin/SysController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/admin/impl/SysServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/admin/SysService.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysPermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysUserService.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/sys/impl/SysServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/service/sys/SysService.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/util/BCryptPasswordEncoderUtil.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/SysController.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseDto.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomSecurityInterceptor.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/model/UrlResource.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/customEntity/UrlResource.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomFilterInvocationSecurityMetadataSource.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/UrlResource.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysRoleService.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/SysPermission.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysRoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/mapper/SysRoleMapper.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDecisionManager.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/WebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -372,11 +420,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2105" />
-    <option name="y" value="81" />
-    <option name="width" value="1663" />
-    <option name="height" value="968" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1674" />
+    <option name="y" value="230" />
+    <option name="width" value="1296" />
+    <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -384,8 +432,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -396,51 +444,6 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -472,16 +475,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -503,17 +496,6 @@
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="security" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -549,6 +531,47 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="orm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="orm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="orm" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="orm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="orm" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="orm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="orm" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="orm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="orm" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="customEntity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -570,16 +593,6 @@
               <item name="orm" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="orm" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="orm" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -636,15 +649,6 @@
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -666,19 +670,20 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pers.cj.framework.common.security.config" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pers.cj.framework.orm.config" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\study\framework\web\src\main\resources\static" />
       <recent name="D:\study\framework\web\src\main\resources" />
       <recent name="D:\study\framework\orm" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pers.cj.framework.orm.entity" />
+      <recent name="pers.cj.framework.orm.config" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pers.cj.framework.common.security.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -699,7 +704,7 @@
       <module name="pers.cj.framework.springboot.common.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.cj.framework.common.security.util.*" />
+          <option name="PATTERN" value="pers.cj.framework.common.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -739,10 +744,10 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="framework:common [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="framework:web [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/common" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/web" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -750,7 +755,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -775,17 +780,17 @@
     <list>
       <item itemvalue="Application.MysqlGenerator" />
       <item itemvalue="Application.BCryptPasswordEncoderUtil" />
-      <item itemvalue="Gradle.framework:common [clean]" />
       <item itemvalue="Gradle.framework:common [build]" />
+      <item itemvalue="Gradle.framework:web [build]" />
       <item itemvalue="Spring Boot.MainApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MainApplication" />
+        <item itemvalue="Gradle.framework:web [build]" />
         <item itemvalue="Application.BCryptPasswordEncoderUtil" />
         <item itemvalue="Application.MysqlGenerator" />
         <item itemvalue="Gradle.framework:common [build]" />
-        <item itemvalue="Gradle.framework:common [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -808,7 +813,8 @@
       <workItem from="1559618474806" duration="12422000" />
       <workItem from="1559785045112" duration="5257000" />
       <workItem from="1559791172334" duration="1170000" />
-      <workItem from="1560128489225" duration="20947000" />
+      <workItem from="1560128489225" duration="68006000" />
+      <workItem from="1560389075014" duration="4901000" />
     </task>
     <servers />
   </component>
@@ -833,13 +839,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135725000" />
+    <option name="totallyTimeSpent" value="187685000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2105" y="81" width="1663" height="968" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25389895" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29264393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -848,307 +854,442 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.40195015" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22668113" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.43045563" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.40130153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.10954447" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.37635574" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.22422062" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4989339" weight="0.2451193" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50159913" side_tool="true" weight="0.38937092" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.32971373" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.01871491" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.4012945" />
       <window_info anchor="right" id="SciView" order="7" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Bean Validation" order="11" weight="0.32938242" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/TestController.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/TestController.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDecisionManager.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomFilterInvocationSecurityMetadataSource.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/intercept/AbstractSecurityInterceptor.java</url>
+          <line>195</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/springboot$framework_web__build_.ic" NAME="framework:web [build] Coverage Results" MODIFIED="1560392433566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/AuthTestController.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/savedrequest/RequestCacheAwareFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-724">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        <state relative-caret-position="342">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/VerifyServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3588">
-          <caret line="156" column="29" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
+        <state relative-caret-position="-77">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/LogoutConfigurer.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xiaoymin/swagger-bootstrap-ui/1.9.2/82265e9529f47d20982c96baa57b6cee69eed1b3/swagger-bootstrap-ui-1.9.2-sources.jar!/com/github/xiaoymin/swaggerbootstrapui/filter/SecurityBasicAuthFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+        <state relative-caret-position="166">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-orm.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-cache.yml">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xiaoymin/swagger-bootstrap-ui/1.9.2/82265e9529f47d20982c96baa57b6cee69eed1b3/swagger-bootstrap-ui-1.9.2-sources.jar!/com/github/xiaoymin/swaggerbootstrapui/filter/ProductionSecurityFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="166">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orm/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/build.gradle">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/druid/1.1.16/3d53ce0264966521056ad03e181e55352ee99fb/druid-1.1.16-sources.jar!/com/alibaba/druid/support/http/WebStatFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="67" />
+        <state relative-caret-position="181">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.session/spring-session-data-redis/2.0.2.RELEASE/1a630c917bacd80ad11926fb937b033f54dcf626/spring-session-data-redis-2.0.2.RELEASE-sources.jar!/org/springframework/session/data/redis/RedisOperationsSessionRepository.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/FilterChainProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="257" column="31" selection-start-line="257" selection-start-column="31" selection-end-line="257" selection-end-column="31" />
+        <state relative-caret-position="158">
+          <caret line="335" selection-start-line="335" selection-end-line="335" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configuration/EnableWebSecurity.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.28/4dbe0fbab4a1a3b8bfb097b83e8409096f8235cd/tomcat-embed-core-8.5.28-sources.jar!/javax/servlet/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        <state relative-caret-position="690">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.session/spring-session-data-redis/2.0.2.RELEASE/1a630c917bacd80ad11926fb937b033f54dcf626/spring-session-data-redis-2.0.2.RELEASE-sources.jar!/org/springframework/session/data/redis/config/annotation/web/http/EnableRedisHttpSession.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.4.RELEASE/49f1c19070743b0446782f38a3fb5b6a4f0e4a74/spring-context-5.0.4.RELEASE-sources.jar!/org/springframework/cache/annotation/EnableCaching.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="173" column="18" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/redis/config/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/rememberme/InMemoryTokenRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/rememberme/PersistentTokenRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.0.4.RELEASE/4c69a0b0279f2d75e386ec018ca8b731d30dcf90/spring-jdbc-5.0.4.RELEASE-sources.jar!/org/springframework/jdbc/core/support/JdbcDaoSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-891">
-          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/rememberme/JdbcTokenRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractHttpConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="676" column="53" selection-start-line="676" selection-start-column="53" selection-end-line="676" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.28/4dbe0fbab4a1a3b8bfb097b83e8409096f8235cd/tomcat-embed-core-8.5.28-sources.jar!/javax/servlet/http/HttpServletResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="478" column="28" selection-start-line="478" selection-start-column="28" selection-end-line="478" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/DelegatingAccessDeniedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-367">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.28/4dbe0fbab4a1a3b8bfb097b83e8409096f8235cd/tomcat-embed-core-8.5.28-sources.jar!/javax/servlet/http/HttpServletRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5950">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/authentication/CachingUserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/authentication/Http403ForbiddenEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/AuthenticationEntryPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExceptionHandlingConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="68" column="31" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/AccessDeniedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="39" column="69" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/AccessDeniedHandlerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-830">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/session/InvalidSessionAccessDeniedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.4/36aa90e99b8c73d43e66daadf50a96b83cbd09d3/jackson-databind-2.9.4-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="3200" column="18" selection-start-line="3200" selection-start-column="18" selection-end-line="3200" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomExpiredSessionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="157">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustonPermissionEvaluator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="32" column="82" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
+        <state relative-caret-position="-22">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.4.RELEASE/2fbf13b190d2b64c44f4235ff24038a1215cbf2d/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        <state relative-caret-position="227">
+          <caret line="49" column="54" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomExpiredSessionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="108" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.28/4dbe0fbab4a1a3b8bfb097b83e8409096f8235cd/tomcat-embed-core-8.5.28-sources.jar!/javax/servlet/FilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.28/4dbe0fbab4a1a3b8bfb097b83e8409096f8235cd/tomcat-embed-core-8.5.28-sources.jar!/org/apache/catalina/core/ApplicationFilterChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="200" selection-start-line="200" selection-end-line="200" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/FilterInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/intercept/AbstractSecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="155" column="49" selection-start-line="155" selection-start-column="21" selection-end-line="155" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/intercept/DefaultFilterInvocationSecurityMetadataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-455">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.4.RELEASE/4c83662d0a602b46635de6562750d44c397aad41/spring-core-5.0.4.RELEASE-sources.jar!/org/springframework/util/AntPathMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="176" column="19" lean-forward="true" selection-start-line="176" selection-start-column="19" selection-end-line="176" selection-end-column="19" />
+          <folding>
+            <element signature="e#6194#6195#0" expanded="true" />
+            <element signature="e#6242#6243#0" expanded="true" />
+            <element signature="e#6312#6313#0" expanded="true" />
+            <element signature="e#6361#6362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDeniedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.2/777a74656e7999ef50a01b57be835bfddeb30e4c/lombok-1.18.2-sources.jar!/lombok/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/SysRolePermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/SysUserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/base/BaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.baomidou/mybatis-plus-annotation/3.1.0/132ca29f8f507d1d987a3e6a4aef49a963e9f4be/mybatis-plus-annotation-3.1.0-sources.jar!/com/baomidou/mybatisplus/annotation/TableField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/customEntity/UrlResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/SysPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/customEntity/UrlResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/util/JsonUtil.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomFilterInvocationSecurityMetadataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="-361">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2014#2015#0" expanded="true" />
+            <element signature="e#2067#2068#0" expanded="true" />
+            <element signature="e#2371#2372#0" expanded="true" />
+            <element signature="e#2440#2441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysRolePermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/mapper/SysRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" selection-start-line="26" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/AccessDecisionVoter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/vote/AuthenticatedVoter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.4.RELEASE/49f1c19070743b0446782f38a3fb5b6a4f0e4a74/spring-context-5.0.4.RELEASE-sources.jar!/org/springframework/context/support/MessageSourceAccessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="85" column="18" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/vote/ConsensusBased.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/vote/AbstractAccessDecisionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="79" column="41" selection-start-line="79" selection-start-column="15" selection-end-line="79" selection-end-column="41" />
+          <folding>
+            <element signature="e#3134#3135#0" expanded="true" />
+            <element signature="e#3174#3175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/ObjectPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.3.RELEASE/6e725386cb37958a9ee5c7ce03baca8d528c8d13/spring-security-web-5.0.3.RELEASE-sources.jar!/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding>
+            <element signature="e#3266#3267#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="154" column="46" selection-start-line="154" selection-start-column="46" selection-end-line="154" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.3.RELEASE/d9ea219dfab41c16f8535d191886e89ec8b32e37/spring-security-config-5.0.3.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="648" column="93" selection-start-line="648" selection-start-column="93" selection-end-line="648" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomSecurityInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="44" column="61" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1157,120 +1298,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+        <state relative-caret-position="132">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#persistentTokenRepository#0;class#WebSecurityConfig#0" />
+            <element signature="e#3090#3183#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysPermissionServiceImpl.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/vote/AffirmativeBased.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
+        <state relative-caret-position="180">
+          <caret line="61" column="28" lean-forward="true" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+          <folding>
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/vote/RoleVoter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="102" column="45" selection-start-line="102" selection-start-column="29" selection-end-line="102" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDecisionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-99">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_201/src.zip!/java/nio/file/AccessDeniedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.3.RELEASE/aaa512e4d8a52f9c1397d10140497fa237a17c40/spring-security-core-5.0.3.RELEASE-sources.jar!/org/springframework/security/access/AccessDeniedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="24" column="59" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="59" />
-          <folding>
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.4.RELEASE/2fbf13b190d2b64c44f4235ff24038a1215cbf2d/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.4.RELEASE/2fbf13b190d2b64c44f4235ff24038a1215cbf2d/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="416" column="30" selection-start-line="416" selection-start-column="30" selection-end-line="416" selection-end-column="30" />
-          <folding>
-            <element signature="e#6497#6498#0" expanded="true" />
-            <element signature="e#6532#6533#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/ResponseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/GloablExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.4.RELEASE/7dd842c0b8f141d4e7de926a5519aa28f0af33e2/spring-webmvc-5.0.4.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="116" column="43" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAuthenticationFailureHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomAccessDeniedHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1783#1784#0" expanded="true" />
+            <element signature="e#1810#1811#0" expanded="true" />
           </folding>
         </state>
       </provider>

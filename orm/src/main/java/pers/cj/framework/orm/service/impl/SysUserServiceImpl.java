@@ -1,11 +1,16 @@
 package pers.cj.framework.orm.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.reflection.wrapper.BaseWrapper;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.EnableCaching;
+import pers.cj.framework.orm.entity.SysPermission;
+import pers.cj.framework.orm.entity.SysRole;
 import pers.cj.framework.orm.entity.SysUser;
 import pers.cj.framework.orm.mapper.SysUserMapper;
 import pers.cj.framework.orm.service.ISysUserService;
@@ -43,4 +48,6 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
     public SysUser getByUserName(String username) {
         return getOne(new QueryWrapper<SysUser>().eq("username",username));
     }
+
+
 }

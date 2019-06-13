@@ -2,17 +2,28 @@ package pers.cj.framework.common.security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.access.AccessDecisionManager;
+import org.springframework.security.access.AccessDecisionVoter;
+import org.springframework.security.access.vote.AffirmativeBased;
+import org.springframework.security.access.vote.AuthenticatedVoter;
+import org.springframework.security.access.vote.RoleVoter;
+import org.springframework.security.config.annotation.ObjectPostProcessor;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
+import javax.annotation.Resource;
 import javax.sql.DataSource;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Description Security配置类
@@ -35,7 +46,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     CustomAccessDeniedHandler customAccessDeniedHandler;
     @Autowired
+    CustomFilterInvocationSecurityMetadataSource customFilterInvocationSecurityMetadataSource;
+//    @Autowired
+//    CustomAccessDecisionManager customAccessDecisionManager;
+    @Autowired
     DataSource dataSource;
+
+
 
     @Bean
     public PersistentTokenRepository persistentTokenRepository() {
@@ -45,6 +62,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //        tokenRepository.setCreateTableOnStartup(true);
         return tokenRepository;
     }
+
+
+
+    @Bean
+    public AccessDecisionManager accessDecisionManager(){
+        List<AccessDecisionVoter<? extends Object>> voters= Arrays.asList(new RoleVoter(),new AuthenticatedVoter());
+        return new AffirmativeBased(voters);
+    }
+
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -65,14 +91,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
+
                 // 如果有允许匿名的url，填在下面.antMatchers().permitAll()
-//                .antMatchers("/login/invalid").permitAll()//session过期跳转的url免登录
+                .antMatchers("/login/invalid").permitAll()//session过期跳转的url免登录
+                .antMatchers("/webjars/**").permitAll()
+                .antMatchers("/v2/api-docs").permitAll()
+                .antMatchers("/swagger-ui.html").permitAll()
+                .antMatchers("/doc.html").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 // 设置登陆页
                 .formLogin().loginPage("/login")
-                // 设置登陆成功页
-                .defaultSuccessUrl("/showHome")
                 .successHandler(customAuthenticationSuccessHandler)
                 .failureHandler(customAuthenticationFailureHandler)
 //                .failureUrl("/loginFail")
@@ -85,7 +114,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionManagement().invalidSessionUrl("/login").maximumSessions(1)
                 .maxSessionsPreventsLogin(false)
                 .expiredSessionStrategy(new CustomExpiredSessionStrategy());// 当达到最大值时，是否保留已经登录的用户
-
+          http.authorizeRequests().withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
+               @Override
+               public <O extends FilterSecurityInterceptor> O postProcess(O fsi) {
+                   fsi.setAccessDecisionManager(accessDecisionManager());
+                   fsi.setSecurityMetadataSource(customFilterInvocationSecurityMetadataSource);
+                   return fsi;
+               }
+          });
 
         // 关闭CSRF跨域
         http.csrf().disable();

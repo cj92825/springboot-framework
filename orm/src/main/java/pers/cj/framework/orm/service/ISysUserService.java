@@ -1,5 +1,8 @@
 package pers.cj.framework.orm.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import pers.cj.framework.orm.entity.SysPermission;
+import pers.cj.framework.orm.entity.SysRole;
 import pers.cj.framework.orm.entity.SysUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -19,4 +22,6 @@ public interface ISysUserService extends IService<SysUser> {
      * @return
      */
     SysUser getByUserName(String username);
+
+
 }

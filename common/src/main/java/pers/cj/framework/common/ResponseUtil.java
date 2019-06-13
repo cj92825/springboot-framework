@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 
 public class ResponseUtil {
 
+
     public static ResponseEntity<Object> success() {
         return success(new ResponseDto());
     }
@@ -20,13 +21,21 @@ public class ResponseUtil {
     }
 
 
-    public static ResponseEntity<Object> fail() {
+    public static ResponseEntity<Object> fail(){
         return fail("请求异常");
     }
     public static ResponseEntity<Object> fail(String msg) {
-        return fail(HttpStatus.INTERNAL_SERVER_ERROR.value(),msg);
+        return fail(HttpStatus.INTERNAL_SERVER_ERROR,msg);
     }
-    public static ResponseEntity<Object> fail(Integer code,String msg) {
-        return ResponseEntity.status(code).body(new ResponseDto().setCode(code).setMsg(msg));
+
+    public static ResponseEntity<Object> fail(HttpStatus status,String msg) {
+        return ResponseEntity.status(status).body(new ResponseDto()
+                .setStatus(status.value())
+                .setError(status.getReasonPhrase())
+                .setMessage(msg));
+
+    }
+    public static ResponseEntity<Object> fail(int status,String msg) {
+        return ResponseEntity.status(status).body(new ResponseDto().setStatus(status).setMessage(msg));
     }
 }

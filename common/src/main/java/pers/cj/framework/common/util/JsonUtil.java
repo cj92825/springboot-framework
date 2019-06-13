@@ -1,4 +1,4 @@
-package pers.cj.framework.common.security.util;
+package pers.cj.framework.common.util;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

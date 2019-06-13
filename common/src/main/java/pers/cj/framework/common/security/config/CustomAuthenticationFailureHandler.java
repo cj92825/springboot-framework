@@ -1,17 +1,12 @@
 package pers.cj.framework.common.security.config;
 
-import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.access.AccessDeniedException;
-import org.springframework.security.authentication.AccountStatusException;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.stereotype.Component;
 import pers.cj.framework.common.ResponseDto;
-import pers.cj.framework.common.ResponseUtil;
-import pers.cj.framework.common.security.util.JsonUtil;
+import pers.cj.framework.common.util.JsonUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -32,6 +27,6 @@ public class CustomAuthenticationFailureHandler implements AuthenticationFailure
         response.setContentType("application/json;charset=utf-8");
         response.setHeader("Cache-Control", "no-cache");
         response.setStatus(HttpStatus.UNAUTHORIZED.value());
-        response.getWriter().print(JsonUtil.toJson(new ResponseDto().setCode(HttpStatus.UNAUTHORIZED.value()).setMsg("登录失败" + exception.getMessage())));
+        response.getWriter().print(JsonUtil.toJson(new ResponseDto().setHttpStatus(HttpStatus.UNAUTHORIZED).setMessage("登录失败" + exception.getMessage())));
     }
 }

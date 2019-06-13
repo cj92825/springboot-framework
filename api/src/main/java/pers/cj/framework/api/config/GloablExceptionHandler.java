@@ -27,7 +27,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import pers.cj.framework.common.ResponseUtil;
 
 /**
- * @Description 异常处理
+ * @Description 异常处理统一返回json
  * @Author chenj
  * @Date 2019/5/31 16:14
  **/
@@ -36,18 +36,27 @@ import pers.cj.framework.common.ResponseUtil;
 public class GloablExceptionHandler extends ResponseEntityExceptionHandler {
     /**
      * 通用异常处理,暂时不用
-     * @param e
      * @return
      */
+//    @ExceptionHandler(Exception.class)
 //    public Object exceptionHandler(Exception e){
 //        log.error("未知异常",e);
-//        AccessDeniedException
 //        return ResponseUtil.fail();
 //    }
 
+    /**
+     * 覆盖ResponseEntityExceptionHandler的处理方法返回统一格式的json
+     * @param ex
+     * @param body
+     * @param headers
+     * @param status
+     * @param request
+     * @return
+     */
     @Override
     protected ResponseEntity<Object> handleExceptionInternal(Exception ex, Object body, HttpHeaders headers, HttpStatus status, WebRequest request) {
-        return ResponseUtil.fail(status.value(),ex.getMessage());
+        log.error("ResponseEntityException",ex);
+        return ResponseUtil.fail(status,ex.getMessage());
     }
 
 

@@ -11,4 +11,5 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-data-redis"
     compile "org.springframework.boot:spring-boot-starter-security"
     compile "org.springframework.session:spring-session-data-redis"
+    compile "org.springframework.boot:spring-boot-starter-aop"
 }

@@ -4,6 +4,8 @@ spring:
     include: orm,cache
   session:
     store-type: redis
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
 
 logging:
   file: spring.log

@@ -6,10 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.http.converter.HttpMessageNotWritableException;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pers.cj.framework.api.aop.AnnotationLog;
 import pers.cj.framework.common.ResponseUtil;
 import pers.cj.framework.orm.entity.SysUser;
 import pers.cj.framework.orm.service.ISysUserService;
@@ -19,7 +21,7 @@ import pers.cj.framework.orm.service.ISysUserService;
  * @Author chenj
  * @Date 2019/5/28 17:56
  **/
-@Api(tags = "Api测试类",value="Api测试类" )
+//@Api(tags = "Api测试类",value="Api测试类" )
 @RestController
 //@MapperScan("pers.cj.framework.*.mapper")//指定mapper包路径
 public class TestController {
@@ -39,7 +41,7 @@ public class TestController {
     }
 
 
-
+    @AnnotationLog
     @GetMapping("/query")
     public Object testMybatis(){
         return iSysUserService.list();
@@ -79,14 +81,9 @@ public class TestController {
         return ResponseUtil.success(sysUser);
     }
     @GetMapping("/error1")
-    public Object error1() throws HttpRequestMethodNotSupportedException {
-        try{
+    public Object error1()  {
             int a=0;
             int b=1/0;
-        }catch (Exception e){
-            System.out.println(e.toString());
-            throw new HttpRequestMethodNotSupportedException("test");
-        }
         return "aa";
     }
 

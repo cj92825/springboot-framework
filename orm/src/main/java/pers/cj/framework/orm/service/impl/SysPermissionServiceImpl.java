@@ -24,4 +24,9 @@ public class SysPermissionServiceImpl extends ServiceImpl<SysPermissionMapper, S
     public List<SysPermission> listByRoleId(int roleId) {
         return list(new QueryWrapper<SysPermission>().eq("role_id",roleId));
     }
+
+    @Override
+    public List<SysPermission> listByRoleName(String roleName) {
+        return list(new QueryWrapper<SysPermission>().eq("name ",roleName));
+    }
 }

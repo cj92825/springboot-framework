@@ -15,7 +15,7 @@ public class BCryptPasswordEncoderUtil {
 
     public static void main(String[] args) {
         //需要加密的密码
-        String passWord="123";
+        String passWord="123456";
         System.out.println("密文密码为"+encode(passWord));
     }
 }

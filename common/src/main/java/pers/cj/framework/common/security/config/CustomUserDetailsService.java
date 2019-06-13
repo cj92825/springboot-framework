@@ -47,7 +47,7 @@ public class CustomUserDetailsService  implements UserDetailsService {
         List<SysUserRole> userRoles=iSysUserRoleService.listByUserId(sysUser.getId());
         for (SysUserRole userRole : userRoles) {
             SysRole role = iSysRoleService.getById(userRole.getRoleId());
-            authorities.add(new SimpleGrantedAuthority(role.getId().toString()));
+            authorities.add(new SimpleGrantedAuthority(role.getName()));
         }
         return new User(sysUser.getUsername(),sysUser.getPassword(),authorities);
     }

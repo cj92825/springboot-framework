@@ -20,4 +20,10 @@ public interface ISysPermissionService extends IService<SysPermission> {
      * @return
      */
     List<SysPermission> listByRoleId(int roleId);
+    /**
+     * 通过角色名查询权限信息
+     * @param roleName
+     * @return
+     */
+    List<SysPermission> listByRoleName(String roleName);
 }
