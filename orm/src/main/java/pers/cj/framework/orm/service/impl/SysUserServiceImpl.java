@@ -45,8 +45,13 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
 
 
     @Override
-    public SysUser getByUserName(String username) {
-        return getOne(new QueryWrapper<SysUser>().eq("username",username));
+    public SysUser getByAccount(String account) {
+        return getOne(new QueryWrapper<SysUser>().eq("account",account));
+    }
+
+    @Override
+    public boolean exist(String account) {
+        return count(new QueryWrapper<SysUser>().eq("account",account))>0?true:false;
     }
 
 

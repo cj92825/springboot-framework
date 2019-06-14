@@ -35,10 +35,10 @@ public class CustomUserDetailsService  implements UserDetailsService {
     ISysUserRoleService iSysUserRoleService;
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String account) throws UsernameNotFoundException {
         Collection<GrantedAuthority> authorities = new ArrayList<>();
         //从数据库查询用户信息
-        SysUser sysUser=iSysUserService.getByUserName(username);
+        SysUser sysUser=iSysUserService.getByAccount(account);
         //判断用户是否存在
         if(sysUser==null){
             throw new UsernameNotFoundException("用户名不存在");
@@ -49,6 +49,7 @@ public class CustomUserDetailsService  implements UserDetailsService {
             SysRole role = iSysRoleService.getById(userRole.getRoleId());
             authorities.add(new SimpleGrantedAuthority(role.getName()));
         }
-        return new User(sysUser.getUsername(),sysUser.getPassword(),authorities);
+        return new User(sysUser.getAccount(),sysUser.getPassword(),authorities);
+//        return new User(sysUser.getUsername(),sysUser.getPassword(),authorities);
     }
 }

@@ -24,7 +24,7 @@ public interface SysRoleMapper extends BaseMapper<SysRole> {
      * @return
      */
 //    @Select("SELECT a.name FROM sys_role a,sys_role_permission b,sys_permission c where c.url=#{url} and c.id=b.permission_id and a.id=b.role_id")
-    @Select("SELECT c.url,a.role_name FROM sys_role a,sys_role_permission b,sys_permission c where c.id=b.permission_id and a.id=b.role_id")
+    @Select("SELECT c.url,a.name FROM sys_role a,sys_role_permission b,sys_permission c where c.id=b.permission_id and a.id=b.role_id")
     @ResultType(UrlResource.class)
     List<UrlResource> getRoleByUrl();
 //    List<UrlResource> getRoleByUrl(@Param("url") String url);

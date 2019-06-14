@@ -6,7 +6,7 @@ spring:
     host: 192.168.1.134
     port: 6379
     password: 123456
-    timeout: 200
+    timeout: 500
     lettuce:
       pool:
         min-idle: 5 # 连接池中的最小空闲连接

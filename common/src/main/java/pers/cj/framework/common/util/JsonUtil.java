@@ -14,4 +14,8 @@ public class JsonUtil {
     public static String toJson(Object data)throws JsonProcessingException {
         return objectMapper.writeValueAsString(data);
     }
+
+    public static ObjectMapper getMapper(){
+        return objectMapper;
+    }
 }

@@ -18,10 +18,16 @@ public interface ISysUserService extends IService<SysUser> {
 
     /**
      * 通过用户名获取用户信息
-     * @param username
+     * @param account
      * @return
      */
-    SysUser getByUserName(String username);
+    SysUser getByAccount(String account);
 
+    /**
+     * 查询account是否已经存在
+     * @param account
+     * @return
+     */
+    boolean exist(String account);
 
 }

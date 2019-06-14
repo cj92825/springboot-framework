@@ -10,5 +10,5 @@ import lombok.Data;
 @Data
 public class UrlResource {
     private String url;
-    private String roleName;
+    private String name;
 }

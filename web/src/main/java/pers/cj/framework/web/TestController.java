@@ -41,6 +41,11 @@ public class TestController {
     }
 
 
+    @GetMapping("/session/invalid")
+    public String sessionInvalid(){
+        return "session超时";
+    }
+
     @AnnotationLog
     @GetMapping("/query")
     public Object testMybatis(){

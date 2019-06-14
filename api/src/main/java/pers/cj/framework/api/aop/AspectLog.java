@@ -40,7 +40,7 @@ public class AspectLog {
     @AfterReturning(returning = "response", pointcut = "annotationLog()")
     public void doAfterReturning(Object response) throws Throwable {
         if (response != null) {
-            log.info("response is {}" + JsonUtil.toJson(response));
+            log.info("response is {}" , JsonUtil.toJson(response));
         }
     }
 

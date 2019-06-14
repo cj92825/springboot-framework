@@ -1,6 +1,7 @@
 package pers.cj.framework.orm.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import pers.cj.framework.orm.base.BaseModel;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
@@ -17,6 +18,7 @@ import lombok.experimental.Accessors;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @Accessors(chain = true)
 public class SysUser extends BaseModel {
 

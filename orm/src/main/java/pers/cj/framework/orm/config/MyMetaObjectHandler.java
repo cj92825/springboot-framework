@@ -1,7 +1,11 @@
 package pers.cj.framework.orm.config;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.reflection.MetaObject;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Date;
 
@@ -23,7 +27,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         }
         if(getFieldValByName(CREATEBY,metaObject)==null){
             //后续接入获取用户id接口
-            String user=getUserId();
+            String user=getUserName();
             setFieldValByName(CREATEBY,user,metaObject);
         }
     }
@@ -36,16 +40,23 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
             setFieldValByName(UPDATETIME,new Date(),metaObject);
         }
         if(getFieldValByName(UPDATEBY,metaObject)==null){
-            String user=getUserId();
+            String user=getUserName();
             setFieldValByName(UPDATEBY,user,metaObject);
         }
     }
 
     /**
-     * 获取用户id
+     * 获取用户名
      * @return
      */
-    private String getUserId() {
-        return "cj";
+    private String getUserName() {
+        Authentication authentication=SecurityContextHolder.getContext().getAuthentication();
+        if(authentication!=null) {
+            UserDetails userDetails= (UserDetails)authentication.getPrincipal();
+            if(StringUtils.isNotEmpty(userDetails.getUsername())) {
+                return userDetails.getUsername();
+            }
+        }
+        return "anonymous";
     }
 }

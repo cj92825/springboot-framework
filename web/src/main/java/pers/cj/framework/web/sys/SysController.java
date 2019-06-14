@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pers.cj.framework.api.service.sys.SysService;
 import pers.cj.framework.common.ResponseUtil;
+import pers.cj.framework.common.exception.CustomException;
 import pers.cj.framework.orm.entity.*;
 import pers.cj.framework.orm.service.*;
 
@@ -39,11 +40,10 @@ public class SysController {
     @Autowired
     ISysPermissionService iSysPermissionService;
 
-
-    @ApiOperation(value="新增用户",notes = "username，password必填，其他选填",response = Integer.class)
+    @ApiOperation(value="新增用户",notes = "account，password必填，其他选填",response = Integer.class)
     @ApiImplicitParam(name = "sysUser", value = "用户信息", required = true, dataType = "SysUser",paramType = "body")
     @PostMapping("/addUser")
-    public Object addUser(@RequestBody SysUser sysUser){
+    public Object addUser(@RequestBody SysUser sysUser) throws CustomException {
         Long userId=sysService.addUser(sysUser);
         return ResponseUtil.success(userId);
     }
@@ -59,9 +59,9 @@ public class SysController {
     @ApiOperation(value="新增角色",response = Integer.class)
     @ApiImplicitParam(name = "sysRole", value = "用户信息", required = true, dataType = "sysRole",paramType = "body")
     @PostMapping("/addRole")
-    public Object addRole(@RequestBody SysRole sysRole){
-        iSysRoleService.save(sysRole);
-        return ResponseUtil.success(sysRole.getId());
+    public Object addRole(@RequestBody SysRole sysRole) throws CustomException {
+
+        return ResponseUtil.success(sysService.addRole(sysRole));
     }
 
     @ApiOperation(value="查询用户列表分页返回",notes = "传入当前页，每页数量",response = IPage.class)
@@ -100,13 +100,13 @@ public class SysController {
 
     @ApiOperation(value="赋予用户角色",notes = "传入用户id，角色id",response = Boolean.class)
     @PostMapping("/grantRole")
-    public Object grantRole(@RequestBody SysUserRole sysUserRole){
-        return ResponseUtil.success(iSysUserRoleService.save(sysUserRole));
+    public Object grantRole(@RequestBody SysUserRole sysUserRole) throws CustomException {
+        return ResponseUtil.success(sysService.grantRole(sysUserRole));
     }
     @ApiOperation(value="赋予角色资源权限",notes = "传入角色id，资源id",response = Boolean.class)
     @PostMapping("/grantPermissions")
-    public Object grantPermissions(@RequestBody SysRolePermission sysRolePermission){
-        return ResponseUtil.success(iSysRolePermissionService.save(sysRolePermission));
+    public Object grantPermissions(@RequestBody SysRolePermission sysRolePermission) throws CustomException{
+        return ResponseUtil.success(sysService.grantPermission(sysRolePermission));
     }
 
     @ApiOperation(value="回收用户角色",response = Boolean.class)

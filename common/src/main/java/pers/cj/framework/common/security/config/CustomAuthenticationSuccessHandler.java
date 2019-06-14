@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
-import pers.cj.framework.common.ResponseDto;
+import pers.cj.framework.common.model.ResponseDto;
 import pers.cj.framework.common.util.JsonUtil;
 
 import javax.servlet.ServletException;

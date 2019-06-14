@@ -11,11 +11,12 @@ logging:
   file: spring.log
   level:
     root: info
-server:
-  servlet:
-    session:
-      timeout: 600
 
+#server:
+#  servlet:
+#    session:
+#      timeout: 60
+#timeout最小是60,用redis管理session时，在EnableRedisHttpSession里配置
 ---
 spring:
   profiles: dev
@@ -23,7 +24,6 @@ spring:
     name: springboot-framework
 server:
   port: 10010
-
 ---
 spring:
   profiles: prod

@@ -1,5 +1,6 @@
 package pers.cj.framework.orm.service.impl;
 
+import org.springframework.cache.annotation.Cacheable;
 import pers.cj.framework.orm.entity.SysRole;
 import pers.cj.framework.orm.entity.customEntity.UrlResource;
 import pers.cj.framework.orm.mapper.SysRoleMapper;
@@ -20,8 +21,14 @@ import java.util.List;
 @Service
 public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole> implements ISysRoleService {
 
+    /**
+     * 缓存权限角色关联列表
+     * @return
+     */
+    @Cacheable(value = "UrlResource",key="'getRoleResource'" )
     @Override
     public List<UrlResource> getRoleByUrl() {
         return baseMapper.getRoleByUrl();
     }
+
 }

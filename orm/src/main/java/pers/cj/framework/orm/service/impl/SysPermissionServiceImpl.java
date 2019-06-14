@@ -20,10 +20,12 @@ import java.util.List;
 @Service
 public class SysPermissionServiceImpl extends ServiceImpl<SysPermissionMapper, SysPermission> implements ISysPermissionService {
 
+
     @Override
     public List<SysPermission> listByRoleId(int roleId) {
         return list(new QueryWrapper<SysPermission>().eq("role_id",roleId));
     }
+
 
     @Override
     public List<SysPermission> listByRoleName(String roleName) {

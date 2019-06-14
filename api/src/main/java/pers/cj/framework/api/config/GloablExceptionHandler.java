@@ -25,9 +25,10 @@ import org.springframework.web.multipart.support.MissingServletRequestPartExcept
 import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 import pers.cj.framework.common.ResponseUtil;
+import pers.cj.framework.common.exception.CustomException;
 
 /**
- * @Description 异常处理统一返回json
+ * @Description 全局的的异常拦截器统一返回json
  * @Author chenj
  * @Date 2019/5/31 16:14
  **/
@@ -36,6 +37,7 @@ import pers.cj.framework.common.ResponseUtil;
 public class GloablExceptionHandler extends ResponseEntityExceptionHandler {
     /**
      * 通用异常处理,暂时不用
+     *
      * @return
      */
 //    @ExceptionHandler(Exception.class)
@@ -45,7 +47,19 @@ public class GloablExceptionHandler extends ResponseEntityExceptionHandler {
 //    }
 
     /**
+     * 捕获自定义的异常
+     * @param e
+     * @return
+     */
+    @ExceptionHandler(CustomException.class)
+    public Object exceptionHandler(CustomException e) {
+        log.error("系统异常", e);
+        return ResponseUtil.fail(e);
+    }
+
+    /**
      * 覆盖ResponseEntityExceptionHandler的处理方法返回统一格式的json
+     *
      * @param ex
      * @param body
      * @param headers
@@ -55,8 +69,8 @@ public class GloablExceptionHandler extends ResponseEntityExceptionHandler {
      */
     @Override
     protected ResponseEntity<Object> handleExceptionInternal(Exception ex, Object body, HttpHeaders headers, HttpStatus status, WebRequest request) {
-        log.error("ResponseEntityException",ex);
-        return ResponseUtil.fail(status,ex.getMessage());
+        log.error("ResponseEntityException", ex);
+        return ResponseUtil.fail(status, ex.getMessage());
     }
 
 

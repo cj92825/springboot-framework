@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;
-import pers.cj.framework.common.ResponseDto;
+import pers.cj.framework.common.model.ResponseDto;
 import pers.cj.framework.common.util.JsonUtil;
 
 import javax.servlet.ServletException;

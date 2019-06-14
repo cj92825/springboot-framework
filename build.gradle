@@ -41,11 +41,17 @@ subprojects {
         implementation "org.springframework.boot:spring-boot-starter-web"
         implementation "org.projectlombok:lombok:1.18.2"
         implementation "com.alibaba:fastjson:${fastjson_version}"
-        implementation "com.google.guava:guava:11.0.2"
+        implementation "org.springframework.boot:spring-boot-starter-data-redis"
+        
+        implementation "org.springframework.boot:spring-boot-starter-security"
+        implementation "org.springframework.session:spring-session-data-redis"
+        implementation "org.springframework.boot:spring-boot-starter-aop"
+        implementation "org.apache.commons:commons-lang3:3.9"
+
+        implementation 'org.apache.commons:commons-pool2:2.6.1'
         testCompile group: 'junit', name: 'junit', version: '4.12'
         testCompile "org.springframework.boot:spring-boot-starter-test"
         
-        compile 'org.apache.commons:commons-pool2:2.6.1'
     }
     jar{
         enabled = true

@@ -14,10 +14,14 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.access.expression.WebExpressionVoter;
+import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
 import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
+import org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
@@ -46,9 +50,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     CustomAccessDeniedHandler customAccessDeniedHandler;
     @Autowired
-    CustomFilterInvocationSecurityMetadataSource customFilterInvocationSecurityMetadataSource;
-//    @Autowired
-//    CustomAccessDecisionManager customAccessDecisionManager;
+    CustomAuthenticationEntryPoint customAuthenticationEntryPoint;
+    @Autowired
+    CustomLogoutSuccessHandler customLogoutSuccessHandler;
+    @Autowired
+    CustomExpiredSessionStrategy customExpiredSessionStrategy;
+    @Autowired
+    CustomInvalidSessionStrategy customInvalidSessionStrategy;
     @Autowired
     DataSource dataSource;
 
@@ -64,12 +72,29 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-
+    /**
+     * 默认只有WebExpressionVoter，添加需要的RoleVoter,并将角色名前缀去掉
+     * 匹配permitAll就在WebExpressionVoter里
+     * @return
+     */
     @Bean
     public AccessDecisionManager accessDecisionManager(){
-        List<AccessDecisionVoter<? extends Object>> voters= Arrays.asList(new RoleVoter(),new AuthenticatedVoter());
+        RoleVoter voter=new RoleVoter();
+        voter.setRolePrefix("");
+        List<AccessDecisionVoter<? extends Object>> voters= Arrays.asList(new WebExpressionVoter(),voter,new AuthenticatedVoter());
         return new AffirmativeBased(voters);
     }
+
+    /**
+     * 自定义资源获取方法，当自己获匹配的结果为空时，返回原来的，否则permitAll会失效
+     * @param metadataSource
+     * @return
+     */
+    @Bean
+    public FilterInvocationSecurityMetadataSource filterSecuritySource(FilterInvocationSecurityMetadataSource metadataSource){
+        return new CustomSecuritySource(metadataSource);
+    }
+
 
 
     @Override
@@ -93,7 +118,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
 
                 // 如果有允许匿名的url，填在下面.antMatchers().permitAll()
-                .antMatchers("/login/invalid").permitAll()//session过期跳转的url免登录
+                .antMatchers("/session/invalid").permitAll()
                 .antMatchers("/webjars/**").permitAll()
                 .antMatchers("/v2/api-docs").permitAll()
                 .antMatchers("/swagger-ui.html").permitAll()
@@ -101,28 +126,33 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().authenticated()
                 .and()
                 // 设置登陆页
-                .formLogin().loginPage("/login")
+                .formLogin().loginPage("/login").permitAll()
                 .successHandler(customAuthenticationSuccessHandler)
                 .failureHandler(customAuthenticationFailureHandler)
-//                .failureUrl("/loginFail")
-                .permitAll()
-                .and().exceptionHandling().accessDeniedHandler(customAccessDeniedHandler)
-                .and().logout().logoutUrl("/logout").deleteCookies("JSESSIONID").logoutSuccessUrl("/login")
+                .and().exceptionHandling().authenticationEntryPoint(customAuthenticationEntryPoint)
+                    .accessDeniedHandler(customAccessDeniedHandler)
+                .and().logout().deleteCookies("JSESSIONID").logoutSuccessHandler(customLogoutSuccessHandler).permitAll()
                 // 自动登录
-                .and().rememberMe().tokenRepository(persistentTokenRepository()).tokenValiditySeconds(600).userDetailsService(userDetailsService)
+                .and().rememberMe().tokenRepository(persistentTokenRepository()).userDetailsService(userDetailsService)
                 .and()
-                .sessionManagement().invalidSessionUrl("/login").maximumSessions(1)
+                .sessionManagement().invalidSessionStrategy(customInvalidSessionStrategy).maximumSessions(1)
                 .maxSessionsPreventsLogin(false)
-                .expiredSessionStrategy(new CustomExpiredSessionStrategy());// 当达到最大值时，是否保留已经登录的用户
+                .expiredSessionStrategy(customExpiredSessionStrategy);
           http.authorizeRequests().withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
                @Override
                public <O extends FilterSecurityInterceptor> O postProcess(O fsi) {
                    fsi.setAccessDecisionManager(accessDecisionManager());
-                   fsi.setSecurityMetadataSource(customFilterInvocationSecurityMetadataSource);
+                   fsi.setSecurityMetadataSource(filterSecuritySource(fsi.getSecurityMetadataSource()));
                    return fsi;
                }
           });
-
+//        http.authorizeRequests().withObjectPostProcessor(new ObjectPostProcessor<UsernamePasswordAuthenticationFilter>() {
+//            @Override
+//            public <O extends UsernamePasswordAuthenticationFilter> O postProcess(O object) {
+//                return object;
+//            }
+//        });
+//        http.addFilterAt()
         // 关闭CSRF跨域
         http.csrf().disable();
     }

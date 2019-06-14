@@ -20,6 +20,8 @@ import java.util.List;
 @Service
 public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleMapper, SysUserRole> implements ISysUserRoleService {
 
+
+
     @Override
     public List<SysUserRole> listByUserId(Long id) {
         return list(new QueryWrapper<SysUserRole>().eq("user_id",id));

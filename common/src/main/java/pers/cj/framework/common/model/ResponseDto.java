@@ -1,4 +1,4 @@
-package pers.cj.framework.common;
+package pers.cj.framework.common.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 import org.springframework.http.HttpStatus;
 import org.springframework.util.StringUtils;
+import pers.cj.framework.common.constant.ExceptionCode;
 import pers.cj.framework.common.util.RequestUtil;
 
 import java.util.Date;
@@ -21,7 +22,7 @@ import java.util.Date;
 @Accessors(chain = true)
 public class ResponseDto {
     private Object data;
-    private Integer status=200;
+    private Integer status= ExceptionCode.OK.code();
     private String message;
     private String error;
     private String path;

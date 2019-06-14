@@ -3,6 +3,7 @@ package pers.cj.framework.common.security.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.access.SecurityConfig;
+import org.springframework.security.access.vote.AuthenticatedVoter;
 import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
 import org.springframework.stereotype.Service;
@@ -22,8 +23,7 @@ import java.util.Set;
  * @Author chenj
  * @Date 2019/6/11 15:49
  **/
-@Service
-public class CustomFilterInvocationSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
+public class CustomSecuritySource implements FilterInvocationSecurityMetadataSource {
     @Autowired
     ISysPermissionService iSysPermissionService;
 
@@ -34,6 +34,12 @@ public class CustomFilterInvocationSecurityMetadataSource implements FilterInvoc
     ISysRoleService iSysRoleService;
 
     AntPathMatcher antPathMatcher=new AntPathMatcher();
+    FilterInvocationSecurityMetadataSource metadataSource;
+
+    public CustomSecuritySource(FilterInvocationSecurityMetadataSource metadataSource){
+        this.metadataSource=metadataSource;
+    }
+
     @Override
     public Collection<ConfigAttribute> getAttributes(Object object) throws IllegalArgumentException {
         Set<ConfigAttribute> set = new HashSet<>();
@@ -43,12 +49,13 @@ public class CustomFilterInvocationSecurityMetadataSource implements FilterInvoc
         List<UrlResource> resources=getRoleByUrl();
         for (UrlResource resource:resources){
             if(antPathMatcher.match(resource.getUrl(),requestUrl)) {
-                ConfigAttribute ca = new SecurityConfig(resource.getRoleName());
+                ConfigAttribute ca = new SecurityConfig(resource.getName());
                 set.add(ca);
             }
         }
-        //没有匹配上的资源，都是登录访问
-        SecurityConfig.createList("ROLE_LOGIN");
+        if(set.isEmpty()){
+            return metadataSource.getAttributes(object);
+        }
         return set;
     }
 
