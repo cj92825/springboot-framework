@@ -16,7 +16,7 @@ public class ResponseUtil {
 
 
     public static ResponseEntity<Object> success() {
-        return success(new ResponseDto());
+        return ResponseEntity.ok(new ResponseDto());
     }
 
     public static ResponseEntity<Object> success(Object object) {

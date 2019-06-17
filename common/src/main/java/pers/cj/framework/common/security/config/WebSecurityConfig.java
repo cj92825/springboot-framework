@@ -1,5 +1,6 @@
 package pers.cj.framework.common.security.config;
 
+import org.apache.http.protocol.HTTP;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.access.AccessDecisionManager;
@@ -59,6 +60,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     CustomInvalidSessionStrategy customInvalidSessionStrategy;
     @Autowired
     DataSource dataSource;
+
 
 
 
@@ -123,6 +125,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/v2/api-docs").permitAll()
                 .antMatchers("/swagger-ui.html").permitAll()
                 .antMatchers("/doc.html").permitAll()
+                .antMatchers("/login").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 // 设置登陆页
@@ -146,6 +149,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                    return fsi;
                }
           });
+
 //        http.authorizeRequests().withObjectPostProcessor(new ObjectPostProcessor<UsernamePasswordAuthenticationFilter>() {
 //            @Override
 //            public <O extends UsernamePasswordAuthenticationFilter> O postProcess(O object) {

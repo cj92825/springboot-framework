@@ -14,7 +14,10 @@ public enum ExceptionCode {
     ACCOUNT_EXIST(4002,"account已经存在"),
     ROLE_EXIST(4003,"角色已经存在"),
     USER_HAD_ROLE(4004,"用户已有该角色"),
-    ROLE_HAD_PERMISSION(4005,"角色已有该权限");
+    ROLE_HAD_PERMISSION(4005,"角色已有该权限"),
+
+    NOT_FIND_FILE(4100,"没有发现文件"),
+    UPLOAD_ERROR(4101,"文件上传异常");
     private final int code;
 
     private final String msg;

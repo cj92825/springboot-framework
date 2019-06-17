@@ -1,6 +1,8 @@
 package pers.cj.framework.common.security.config;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.security.web.DefaultRedirectStrategy;
+import org.springframework.security.web.RedirectStrategy;
 import org.springframework.security.web.session.InvalidSessionStrategy;
 import org.springframework.stereotype.Component;
 import pers.cj.framework.common.model.ResponseDto;
@@ -19,15 +21,22 @@ import java.io.IOException;
  **/
 @Component
 public class CustomInvalidSessionStrategy implements InvalidSessionStrategy {
+    private final String destinationUrl="/login";
+    private final RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
+    private boolean createNewSession = true;
     @Override
     public void onInvalidSessionDetected(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        if(true){
+        //参考默认类SimpleRedirectInvalidSessionStrategy里的方法，创建一个新的session
+        if (createNewSession) {
+            request.getSession();
+        }
+        if(RequestUtil.isAjaxRequest(request)){
             response.setStatus(HttpStatus.UNAUTHORIZED.value());
             response.setContentType("application/json;charset=utf-8");
             response.setHeader("Cache-Control", "no-cache");
             response.getWriter().print(JsonUtil.toJson(new ResponseDto().setHttpStatus(HttpStatus.UNAUTHORIZED).setMessage("Session已失效,请重新登录")));
         }else{
-            response.sendRedirect("/login");
+            redirectStrategy.sendRedirect(request, response, destinationUrl);
         }
     }
 }

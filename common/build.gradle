@@ -8,5 +8,6 @@ sourceCompatibility = 1.8
 
 dependencies {
     compile project(":orm")
-    
+    compile "commons-io:commons-io:2.2"
+    compile "com.aliyun.oss:aliyun-sdk-oss:2.8.3"
 }

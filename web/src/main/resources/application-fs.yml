@@ -1,0 +1,21 @@
+spring:
+  thymeleaf:
+    cache: false # 禁用 thymeleaf 缓存
+  servlet:
+    multipart:
+      enabled: true # 是否支持批量上传   (默认值 true)
+      location:    # 上传文件的临时目录 （一般情况下不用特意修改）
+      max-file-size: 1048576  # 上传文件最大为 1M （默认值 1M 根据自身业务自行控制即可）
+      max-request-size: 10485760  # 上传请求最大为 10M（默认值10M 根据自身业务自行控制即可）
+      file-size-threshold: 0  # 文件大小阈值，当大于这个阈值时将写入到磁盘，否则存在内存中，（默认值0 一般情况下不用特意修改）
+      resolve-lazily: false   # 判断是否要延迟解析文件（相当于懒加载，一般情况下不用特意修改）
+
+fs:
+  aliOos:
+    enable: true #是否使用阿里OSS,为false时文件存在filepath指定的路径
+    endpoint: http://oss-cn-beijing.aliyuncs.com
+    accessKeyId: LTAIMbk9m1guOemq
+    accessKeySecret: PyB67WlX8Mgp5duNsa8KJwiWldh58b
+    bucketName: springboot-file
+    path: file #自定义路径(在阿里云OSS存储空间里的目录，目录最前面不要加/)
+  filePath: d:/   #当enable为false时此项生效

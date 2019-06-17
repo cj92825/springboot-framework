@@ -20,7 +20,6 @@ import javax.servlet.http.HttpServletRequest;
 public class AuthTestController {
 
     private Logger logger = LoggerFactory.getLogger(AuthTestController.class);
-
     @RequestMapping("/showHome")
     public String showHome() {
         String name = SecurityContextHolder.getContext().getAuthentication().getName();

@@ -1,7 +1,7 @@
 spring:
   profiles:
     active: dev
-    include: orm,cache
+    include: orm,cache,fs,auth
   session:
     store-type: redis
   jackson:
@@ -11,11 +11,12 @@ logging:
   file: spring.log
   level:
     root: info
+    pers.cj.framwork: info
 
-#server:
-#  servlet:
-#    session:
-#      timeout: 60
+server:
+  servlet:
+    session:
+      timeout: 60
 #timeout最小是60,用redis管理session时，在EnableRedisHttpSession里配置
 ---
 spring:

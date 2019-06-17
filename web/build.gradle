@@ -16,6 +16,13 @@ dependencies {
 
 mainClassName = 'pers.cj.framework.MainApplication'
 
+jar{
+    baseName = "springboot-framework"
+}
+
+
+
+
 //task clearJar(type: Delete) {
 //    delete 'build/libs/lib'
 //}
