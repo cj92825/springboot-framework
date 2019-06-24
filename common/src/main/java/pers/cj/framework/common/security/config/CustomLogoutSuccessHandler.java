@@ -6,7 +6,7 @@ import org.springframework.security.web.authentication.logout.LogoutSuccessHandl
 import org.springframework.stereotype.Component;
 import pers.cj.framework.common.model.ResponseDto;
 import pers.cj.framework.common.util.JsonUtil;
-import pers.cj.framework.common.util.RequestUtil;
+import pers.cj.framework.common.util.ServletUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -22,7 +22,7 @@ import java.io.IOException;
 public class CustomLogoutSuccessHandler implements LogoutSuccessHandler {
     @Override
     public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
-        if(RequestUtil.isAjaxRequest(request)){
+        if(ServletUtil.isAjaxRequest(request)){
             response.setStatus(HttpStatus.OK.value());
             response.setContentType("application/json;charset=utf-8");
             response.setHeader("Cache-Control", "no-cache");

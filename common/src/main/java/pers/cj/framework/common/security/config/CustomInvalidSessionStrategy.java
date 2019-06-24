@@ -7,7 +7,7 @@ import org.springframework.security.web.session.InvalidSessionStrategy;
 import org.springframework.stereotype.Component;
 import pers.cj.framework.common.model.ResponseDto;
 import pers.cj.framework.common.util.JsonUtil;
-import pers.cj.framework.common.util.RequestUtil;
+import pers.cj.framework.common.util.ServletUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -30,7 +30,7 @@ public class CustomInvalidSessionStrategy implements InvalidSessionStrategy {
         if (createNewSession) {
             request.getSession();
         }
-        if(RequestUtil.isAjaxRequest(request)){
+        if(ServletUtil.isAjaxRequest(request)){
             response.setStatus(HttpStatus.UNAUTHORIZED.value());
             response.setContentType("application/json;charset=utf-8");
             response.setHeader("Cache-Control", "no-cache");

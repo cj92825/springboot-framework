@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Random;
 
 /**
- * @Description TODO
+ * @Description 验证码，未实现
  * @Author chenj
  * @Date 2019/6/10 11:18
  **/

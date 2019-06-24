@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @Description 动态获取url权限配置
+ * @Description 动态获取url权限配置，之后会配合AccessDecisionManager验证
  * @Author chenj
  * @Date 2019/6/11 15:49
  **/

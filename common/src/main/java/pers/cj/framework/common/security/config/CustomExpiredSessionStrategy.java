@@ -5,7 +5,7 @@ import org.springframework.security.web.session.SessionInformationExpiredStrateg
 import org.springframework.stereotype.Component;
 import pers.cj.framework.common.model.ResponseDto;
 import pers.cj.framework.common.util.JsonUtil;
-import pers.cj.framework.common.util.RequestUtil;
+import pers.cj.framework.common.util.ServletUtil;
 
 import javax.servlet.ServletException;
 import java.io.IOException;
@@ -19,7 +19,7 @@ import java.io.IOException;
 public class CustomExpiredSessionStrategy implements SessionInformationExpiredStrategy {
     @Override
     public void onExpiredSessionDetected(SessionInformationExpiredEvent event) throws IOException, ServletException {
-        if(RequestUtil.isAjaxRequest(event.getRequest())) {
+        if(ServletUtil.isAjaxRequest(event.getRequest())) {
             String json = JsonUtil.toJson(
                     new ResponseDto()
                             .setStatus(456)

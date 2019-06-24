@@ -49,6 +49,7 @@ public class SysController {
     }
 
 
+
     @ApiOperation(value="删除用户",notes = "传入用户id",response = Boolean.class)
     @ApiImplicitParam(name = "userId", value = "用户Id", required = true, dataType = "int",paramType = "body")
     @PostMapping("/deleteUser")

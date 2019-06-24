@@ -20,6 +20,8 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     private static final String UPDATETIME="updateTime";
     private static final String CREATEBY="createBy";
     private static final String UPDATEBY="updateBy";
+    private Authentication authentication;
+
     @Override
     public void insertFill(MetaObject metaObject) {
         if(getFieldValByName(CREATETIME,metaObject)==null){
@@ -50,12 +52,9 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
      * @return
      */
     private String getUserName() {
-        Authentication authentication=SecurityContextHolder.getContext().getAuthentication();
+        Authentication authentication= SecurityContextHolder.getContext().getAuthentication();
         if(authentication!=null) {
-            UserDetails userDetails= (UserDetails)authentication.getPrincipal();
-            if(StringUtils.isNotEmpty(userDetails.getUsername())) {
-                return userDetails.getUsername();
-            }
+                return authentication.getName();
         }
         return "anonymous";
     }

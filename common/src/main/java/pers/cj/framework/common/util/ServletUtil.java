@@ -4,13 +4,14 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @Description Request工具类
  * @Author chenj
  * @Date 2019/6/11 9:57
  **/
-public class RequestUtil {
+public class ServletUtil {
     /**
      * 获取HttpServletRequest对象
      * @return
@@ -18,6 +19,14 @@ public class RequestUtil {
     public static HttpServletRequest getRequest(){
         ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         return servletRequestAttributes.getRequest();
+    }
+    /**
+     * 获取HttpServletResponse对象
+     * @return
+     */
+    public static HttpServletResponse getResponse(){
+        ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        return servletRequestAttributes.getResponse();
     }
 
     /**

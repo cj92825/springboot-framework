@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import pers.cj.framework.common.security.model.CustomUser;
 import pers.cj.framework.orm.entity.SysRole;
 import pers.cj.framework.orm.entity.SysUser;
 import pers.cj.framework.orm.entity.SysUserRole;
@@ -49,7 +50,8 @@ public class CustomUserDetailsService  implements UserDetailsService {
             SysRole role = iSysRoleService.getById(userRole.getRoleId());
             authorities.add(new SimpleGrantedAuthority(role.getName()));
         }
-        return new User(sysUser.getAccount(),sysUser.getPassword(),authorities);
-//        return new User(sysUser.getUsername(),sysUser.getPassword(),authorities);
+//        return new User(sysUser.getAccount(),sysUser.getPassword(),authorities);
+        //自定义User类，保存下sysUser信息
+        return new CustomUser(authorities,sysUser);
     }
 }

@@ -8,7 +8,7 @@ import lombok.experimental.Accessors;
 import org.springframework.http.HttpStatus;
 import org.springframework.util.StringUtils;
 import pers.cj.framework.common.constant.ExceptionCode;
-import pers.cj.framework.common.util.RequestUtil;
+import pers.cj.framework.common.util.ServletUtil;
 
 import java.util.Date;
 
@@ -37,7 +37,7 @@ public class ResponseDto {
     }
 
     public String getPath() {
-        return RequestUtil.getRequestURI();
+        return ServletUtil.getRequestURI();
     }
 
     public ResponseDto setHttpStatus(HttpStatus httpStatus) {
