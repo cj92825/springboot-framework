@@ -10,17 +10,17 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 权限管理
+ * 菜单管理
  * </p>
  *
  * @author chenj
- * @since 2019-06-27
+ * @since 2019-07-02
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Accessors(chain = true)
-public class SysPermission extends BaseModel {
+public class SysMenu extends BaseModel {
 
     private static final long serialVersionUID = 1L;
 
@@ -33,18 +33,20 @@ public class SysPermission extends BaseModel {
     /**
      * url路径
      */
-    private String uri;
+    private String path;
 
     /**
-     * 权限
+     * 组件
      */
-    private String permission;
+    private String component;
 
     private String name;
 
-    private String description;
+    private String redirect;
 
-    private Integer groupId;
+    private String meta;
+
+    private Long parentId;
 
 
 }

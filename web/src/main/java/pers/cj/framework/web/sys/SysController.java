@@ -17,6 +17,9 @@ import pers.cj.framework.common.exception.CustomException;
 import pers.cj.framework.orm.entity.*;
 import pers.cj.framework.orm.service.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Description 系统管理相关的接口
  * @Author chenj
@@ -37,8 +40,7 @@ public class SysController {
     ISysUserRoleService iSysUserRoleService;
     @Autowired
     ISysRolePermissionService iSysRolePermissionService;
-    @Autowired
-    ISysPermissionService iSysPermissionService;
+
 
     @ApiOperation(value="新增用户",notes = "account，password必填，其他选填",response = Integer.class)
     @ApiImplicitParam(name = "sysUser", value = "用户信息", required = true, dataType = "SysUser",paramType = "body")
@@ -78,26 +80,13 @@ public class SysController {
     @ApiOperation(value="查询角色列表分页返回",notes = "传入当前页，每页数量",response = IPage.class)
     @GetMapping("/queryRoles")
     public Object queryRoles(@RequestParam("currentPage") long currentPage,
-                             @RequestParam("size") long size,
-                             @RequestParam(value = "user_id",required = false) Long id){
+                             @RequestParam("size") long size){
         return ResponseUtil.success(
                 iSysRoleService.page(
-                        new Page<>(currentPage,size),
-                         new QueryWrapper<SysRole>().eq(id!=null,"user_id",id)
+                        new Page<>(currentPage,size)
                 ));
     }
 
-    @ApiOperation(value="查询资源列表分页返回",notes = "传入当前页，每页数量,",response = IPage.class)
-    @GetMapping("/queryPermissions")
-    public Object queryPermissions(@RequestParam("currentPage") long currentPage,
-                                   @RequestParam("size") long size,
-                                   @RequestParam(value = "role_id",required = false) Long id){
-        return ResponseUtil.success(
-                iSysPermissionService.page(
-                        new Page<>(currentPage,size),
-                        new QueryWrapper<SysPermission>().eq(id!=null,"role_id",id)
-                ));
-    }
 
     @ApiOperation(value="赋予用户角色",notes = "传入用户id，角色id",response = Boolean.class)
     @PostMapping("/grantRole")

@@ -3,12 +3,10 @@ package pers.cj.framework.common.security.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.access.SecurityConfig;
-import org.springframework.security.access.vote.AuthenticatedVoter;
 import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
-import org.springframework.stereotype.Service;
 import org.springframework.util.AntPathMatcher;
-import pers.cj.framework.orm.entity.customEntity.UrlResource;
+import pers.cj.framework.orm.entity.customentity.UrlResource;
 import pers.cj.framework.orm.service.ISysPermissionService;
 import pers.cj.framework.orm.service.ISysRolePermissionService;
 import pers.cj.framework.orm.service.ISysRoleService;
@@ -48,7 +46,7 @@ public class CustomSecuritySource implements FilterInvocationSecurityMetadataSou
         //获取url对应的角色名
         List<UrlResource> resources=getRoleByUrl();
         for (UrlResource resource:resources){
-            if(antPathMatcher.match(resource.getUrl(),requestUrl)) {
+            if(antPathMatcher.match(resource.getUri(),requestUrl)) {
                 ConfigAttribute ca = new SecurityConfig(resource.getName());
                 set.add(ca);
             }

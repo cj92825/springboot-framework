@@ -10,7 +10,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 权限管理
+ * 权限分组
  * </p>
  *
  * @author chenj
@@ -20,7 +20,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Accessors(chain = true)
-public class SysPermission extends BaseModel {
+public class SysPermissionGroup extends BaseModel {
 
     private static final long serialVersionUID = 1L;
 
@@ -31,20 +31,14 @@ public class SysPermission extends BaseModel {
     private Long id;
 
     /**
-     * url路径
+     * 组名
      */
-    private String uri;
+    private String label;
 
     /**
-     * 权限
+     * 父级id
      */
-    private String permission;
-
-    private String name;
-
-    private String description;
-
-    private Integer groupId;
+    private Long parentId;
 
 
 }

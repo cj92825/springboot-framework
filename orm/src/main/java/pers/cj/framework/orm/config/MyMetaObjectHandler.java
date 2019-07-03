@@ -20,7 +20,6 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
     private static final String UPDATETIME="updateTime";
     private static final String CREATEBY="createBy";
     private static final String UPDATEBY="updateBy";
-    private Authentication authentication;
 
     @Override
     public void insertFill(MetaObject metaObject) {

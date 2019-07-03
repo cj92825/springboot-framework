@@ -16,7 +16,8 @@ import pers.cj.framework.common.exception.CustomException;
 import pers.cj.framework.common.security.model.CustomUser;
 import pers.cj.framework.orm.entity.SysUser;
 
-import java.util.Collection;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @Description TODO
@@ -31,16 +32,13 @@ public class UserController {
 
     @ApiOperation(value="查询当前用户信息")
     @GetMapping("/info")
-    public Object userInfo() throws CustomException {
-        UsernamePasswordAuthenticationToken authentication= (UsernamePasswordAuthenticationToken)SecurityContextHolder.getContext().getAuthentication();
-        String name=authentication.getName();
-        Collection<? extends GrantedAuthority> authorities =authentication.getAuthorities();
-//        String pwd=authentication.getCredentials().toString();
-        CustomUser user=(CustomUser) authentication.getPrincipal();
-        SysUser user1=user.getSysUser();
-//        UserDetails userDetails= (UserDetails)authentication.getPrincipal();
-//        String name2=userDetails.getUsername();
-//        Collection<? extends GrantedAuthority> authorities2=userDetails.getAuthorities();
-        return ResponseUtil.success();
+    public Object userInfo(){
+        Authentication authentication= SecurityContextHolder.getContext().getAuthentication();
+        Map<String,Object> map=new HashMap<>(5);
+        map.put("name",authentication.getName());
+        Collection<? extends GrantedAuthority > grantedAuthorities = authentication.getAuthorities();
+        List<String> roles=grantedAuthorities.stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList());
+        map.put("roles",roles);
+        return ResponseUtil.success(map);
     }
 }

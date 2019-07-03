@@ -2,7 +2,7 @@ package pers.cj.framework.orm.service.impl;
 
 import org.springframework.cache.annotation.Cacheable;
 import pers.cj.framework.orm.entity.SysRole;
-import pers.cj.framework.orm.entity.customEntity.UrlResource;
+import pers.cj.framework.orm.entity.customentity.UrlResource;
 import pers.cj.framework.orm.mapper.SysRoleMapper;
 import pers.cj.framework.orm.service.ISysRoleService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

@@ -1,6 +1,6 @@
 package pers.cj.framework.orm.service;
 
-import pers.cj.framework.orm.entity.customEntity.UrlResource;
+import pers.cj.framework.orm.entity.customentity.UrlResource;
 import pers.cj.framework.orm.entity.SysRole;
 import com.baomidou.mybatisplus.extension.service.IService;
 

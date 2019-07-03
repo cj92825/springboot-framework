@@ -15,11 +15,10 @@ import java.util.List;
  * </p>
  *
  * @author chenj
- * @since 2019-06-10
+ * @since 2019-06-27
  */
 @Service
 public class SysPermissionServiceImpl extends ServiceImpl<SysPermissionMapper, SysPermission> implements ISysPermissionService {
-
 
     @Override
     public List<SysPermission> listByRoleId(int roleId) {

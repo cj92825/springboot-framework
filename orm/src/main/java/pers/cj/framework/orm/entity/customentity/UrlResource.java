@@ -1,4 +1,4 @@
-package pers.cj.framework.orm.entity.customEntity;
+package pers.cj.framework.orm.entity.customentity;
 
 import lombok.Data;
 
@@ -9,6 +9,6 @@ import lombok.Data;
  **/
 @Data
 public class UrlResource {
-    private String url;
+    private String uri;
     private String name;
 }

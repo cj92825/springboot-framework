@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author chenj
- * @since 2019-06-10
+ * @since 2019-06-27
  */
 public interface SysPermissionMapper extends BaseMapper<SysPermission> {
 
