@@ -49,10 +49,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         return getOne(new QueryWrapper<SysUser>().eq("account",account));
     }
 
-    @Override
-    public boolean exist(String account) {
-        return count(new QueryWrapper<SysUser>().eq("account",account))>0?true:false;
-    }
+
 
 
 }

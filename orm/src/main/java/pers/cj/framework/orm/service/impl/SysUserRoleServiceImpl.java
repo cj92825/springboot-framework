@@ -23,7 +23,9 @@ public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleMapper, SysUs
 
 
     @Override
-    public List<SysUserRole> listByUserId(Long id) {
+    public List<SysUserRole> listByUserId(long id) {
         return list(new QueryWrapper<SysUserRole>().eq("user_id",id));
     }
+
+
 }

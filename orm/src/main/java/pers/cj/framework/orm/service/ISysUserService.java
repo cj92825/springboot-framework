@@ -23,11 +23,6 @@ public interface ISysUserService extends IService<SysUser> {
      */
     SysUser getByAccount(String account);
 
-    /**
-     * 查询account是否已经存在
-     * @param account
-     * @return
-     */
-    boolean exist(String account);
+
 
 }

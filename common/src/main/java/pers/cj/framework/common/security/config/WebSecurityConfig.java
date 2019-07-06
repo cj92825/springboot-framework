@@ -15,6 +15,8 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.session.SessionRegistry;
+import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.access.expression.WebExpressionVoter;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
@@ -80,6 +82,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         serializer.setUseHttpOnlyCookie(false);
         return serializer;
     }
+    @Bean
+    public SessionRegistry sessionRegistry() {
+        return new SessionRegistryImpl();
+    }
+
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
@@ -169,7 +176,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .sessionManagement().invalidSessionStrategy(customInvalidSessionStrategy).maximumSessions(1)
                 .maxSessionsPreventsLogin(false)
-                .expiredSessionStrategy(customExpiredSessionStrategy);
+                .expiredSessionStrategy(customExpiredSessionStrategy).sessionRegistry(sessionRegistry());
 
           http.authorizeRequests().withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
                @Override

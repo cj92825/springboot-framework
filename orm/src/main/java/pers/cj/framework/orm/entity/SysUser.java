@@ -1,6 +1,7 @@
 package pers.cj.framework.orm.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import pers.cj.framework.orm.base.BaseModel;
 import com.baomidou.mybatisplus.annotation.TableId;

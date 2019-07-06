@@ -1,5 +1,6 @@
 package pers.cj.framework.common.security.config;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.security.web.session.SessionInformationExpiredEvent;
 import org.springframework.security.web.session.SessionInformationExpiredStrategy;
 import org.springframework.stereotype.Component;
@@ -22,9 +23,10 @@ public class CustomExpiredSessionStrategy implements SessionInformationExpiredSt
         if(ServletUtil.isAjaxRequest(event.getRequest())) {
             String json = JsonUtil.toJson(
                     new ResponseDto()
-                            .setStatus(456)
-                            .setMessage("已经另一台机器登录，您被迫下线。" + event.getSessionInformation().getLastRequest()));
+                            .setStatus(HttpStatus.UNAUTHORIZED.value())
+                            .setMessage("Session过期或已在另一台机器登录，您被迫下线。" + event.getSessionInformation().getLastRequest()));
             event.getResponse().setContentType("application/json;charset=utf-8");
+            event.getResponse().setStatus(HttpStatus.UNAUTHORIZED.value());
             event.getResponse().setHeader("Cache-Control", "no-cache");
             event.getResponse().getWriter().print(json);
         }else{

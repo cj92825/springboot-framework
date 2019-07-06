@@ -1,5 +1,6 @@
 package pers.cj.framework.orm.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.springframework.cache.annotation.CacheEvict;
 import pers.cj.framework.orm.entity.SysRolePermission;
 import pers.cj.framework.orm.mapper.SysRolePermissionMapper;
@@ -8,6 +9,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * <p>
@@ -29,5 +31,11 @@ public class SysRolePermissionServiceImpl extends ServiceImpl<SysRolePermissionM
     @Override
     public boolean removeById(Serializable id) {
         return super.removeById(id);
+    }
+
+
+    @Override
+    public List<SysRolePermission> listByRoleId(Long roleId) {
+        return list(new QueryWrapper<SysRolePermission>().eq("role_id",roleId));
     }
 }

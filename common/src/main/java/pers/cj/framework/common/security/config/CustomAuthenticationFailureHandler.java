@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.stereotype.Component;
+import pers.cj.framework.common.constant.ExceptionCode;
 import pers.cj.framework.common.model.ResponseDto;
 import pers.cj.framework.common.util.JsonUtil;
 
@@ -26,7 +27,7 @@ public class CustomAuthenticationFailureHandler implements AuthenticationFailure
         log.info("登录失败",exception);
         response.setContentType("application/json;charset=utf-8");
         response.setHeader("Cache-Control", "no-cache");
-        response.setStatus(HttpStatus.UNAUTHORIZED.value());
-        response.getWriter().print(JsonUtil.toJson(new ResponseDto().setHttpStatus(HttpStatus.UNAUTHORIZED).setMessage("登录失败" + exception.getMessage())));
+        response.setStatus(ExceptionCode.LOGIN_FAIL.code());
+        response.getWriter().print(JsonUtil.toJson(new ResponseDto().setStatus(ExceptionCode.LOGIN_FAIL.code()).setMessage(exception.getMessage())));
     }
 }

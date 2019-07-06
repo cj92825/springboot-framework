@@ -22,7 +22,7 @@ public class CustomUser extends User {
     }
 
     public CustomUser(Collection<? extends GrantedAuthority> authorities,SysUser sysUser){
-        super(sysUser.getUsername(), sysUser.getPassword(), authorities);
+        super(sysUser.getAccount(), sysUser.getPassword(), authorities);
         this.sysUser=sysUser;
     }
 

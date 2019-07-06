@@ -27,7 +27,7 @@ public class PermissionController {
     ISysPermissionGroupService iSysPermissionGroupService;
 
     @ApiOperation(value="查询资源列表分页返回",notes = "传入当前页，每页数量",response = IPage.class)
-    @GetMapping("/queryPermissions")
+    @GetMapping("/permissions")
     public Object queryPermissions(@RequestParam("currentPage") long currentPage,
                                    @RequestParam("size") long size){
         return ResponseUtil.success(
@@ -51,7 +51,7 @@ public class PermissionController {
 
 
     @ApiOperation(value="查询资源分组列表",response = SysPermissionGroup.class)
-    @GetMapping("/queryPermissionsGroup")
+    @GetMapping("/permissionsGroup")
     public Object queryPermissionsGroup(){
         return ResponseUtil.success(iSysPermissionGroupService.list());
     }

@@ -14,8 +14,12 @@ import java.util.List;
  * @since 2019-06-04
  */
 public interface ISysUserRoleService extends IService<SysUserRole> {
+
+
     /**
-     * 通过用户id获取角色信息
+     * 通过userID查询角色列表
+     * @param userId
+     * @return
      */
-    List<SysUserRole> listByUserId(Long id);
+    List<SysUserRole> listByUserId(long userId);
 }

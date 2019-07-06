@@ -27,7 +27,7 @@ public class MenuController {
     ISysMenuService iSysMenuService;
 
     @ApiOperation(value="获取菜单列表",response = SysMenu.class)
-    @GetMapping("/getMenus")
+    @GetMapping("/menus")
     public Object getMenus()  {
         return ResponseUtil.success(iSysMenuService.list());
     }
