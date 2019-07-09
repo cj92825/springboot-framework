@@ -8,18 +8,13 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.ConfigAttribute;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.bind.annotation.*;
 import pers.cj.framework.api.service.sys.SysService;
 import pers.cj.framework.common.ResponseUtil;
 import pers.cj.framework.common.exception.CustomException;
-import pers.cj.framework.common.security.model.CustomUser;
 import pers.cj.framework.orm.entity.SysUser;
 import pers.cj.framework.orm.service.ISysUserService;
 

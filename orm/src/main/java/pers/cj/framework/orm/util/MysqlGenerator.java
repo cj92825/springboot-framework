@@ -65,14 +65,14 @@ public class MysqlGenerator {
 
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("chenj");
-        gc.setEnableCache(false);
+//        gc.setEnableCache(false);
         gc.setOpen(false);
         gc.setFileOverride(true);
-//        gc.setBaseResultMap(true);
-        gc.setBaseColumnList(true);
-        gc.setActiveRecord(false);
+//        gc.setBaseResultMap(true); //不在xml中生成basemap对应关系，通过类默认映射
+//        gc.setBaseColumnList(true); //不再xml中生成通用查询结果列
+//        gc.setActiveRecord(false);
         gc.setIdType(IdType.AUTO);
-        // gc.setSwagger2(true); 实体属性 Swagger2 注解
+        gc.setSwagger2(true); //实体属性 Swagger2 注解
         mpg.setGlobalConfig(gc);
         // 自定义配置
         InjectionConfig cfg = new InjectionConfig() {

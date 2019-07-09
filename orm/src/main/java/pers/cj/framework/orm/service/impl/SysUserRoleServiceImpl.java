@@ -1,6 +1,7 @@
 package pers.cj.framework.orm.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import pers.cj.framework.orm.entity.SysUserRole;
 import pers.cj.framework.orm.mapper.SysUserRoleMapper;
 import pers.cj.framework.orm.service.ISysUserRoleService;
@@ -21,10 +22,9 @@ import java.util.List;
 public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleMapper, SysUserRole> implements ISysUserRoleService {
 
 
-
     @Override
     public List<SysUserRole> listByUserId(long id) {
-        return list(new QueryWrapper<SysUserRole>().eq("user_id",id));
+        return list(Wrappers.<SysUserRole>lambdaQuery().eq(SysUserRole::getUserId,id));
     }
 
 

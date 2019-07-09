@@ -4,8 +4,13 @@ spring:
     include: orm,cache,fs,auth
   session:
     store-type: redis
-  jackson:
-    date-format: yyyy-MM-dd HH:mm:ss
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    deserialization:
+#      #允许对象忽略json中不存在的属性
+#      fail_on_unknown_properties: false
+
+
 
 logging:
   file: spring.log

@@ -46,7 +46,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
 
     @Override
     public SysUser getByAccount(String account) {
-        return getOne(new QueryWrapper<SysUser>().eq("account",account));
+        return getOne(Wrappers.<SysUser>lambdaQuery().eq(SysUser::getAccount,account));
     }
 
 

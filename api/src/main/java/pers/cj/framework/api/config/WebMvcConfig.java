@@ -3,6 +3,9 @@ package pers.cj.framework.api.config;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.shihyuho.jackson.databind.DynamicFilterMixIn;
+import com.github.shihyuho.jackson.databind.DynamicFilterProvider;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
@@ -44,12 +47,23 @@ public class WebMvcConfig implements WebMvcConfigurer {
 //                .maxAge(3600);
 //    }
 
+
     /**
-     * 这里只修改了日期格式直接在配置文件添加
-     * spring:
-     *   jackson:
-     *     date-format: yyyy-MM-dd HH:mm:ss
+     *
+     * 使用DynamicFilterProvider动态过滤时因为重新注入了Converter导致xml配置文件的自动配置会失效，两个不能同时使用，在这里重新
+     * 注入MappingJackson2HttpMessageConverter把两个需要的功能写在一起
      */
+    @Bean
+    public MappingJackson2HttpMessageConverter mappingJackson2HttpMessageConverter() {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        mapper.addMixIn(Object.class, DynamicFilterMixIn.class);
+        mapper.setFilterProvider(new DynamicFilterProvider());
+        return new MappingJackson2HttpMessageConverter(mapper);
+    }
+
+
 //    @Bean
 //    public MappingJackson2HttpMessageConverter getConverter() {
 //        MappingJackson2HttpMessageConverter jsonConverter = new MappingJackson2HttpMessageConverter();

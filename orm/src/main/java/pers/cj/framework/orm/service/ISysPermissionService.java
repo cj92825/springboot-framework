@@ -14,16 +14,4 @@ import java.util.List;
  * @since 2019-06-27
  */
 public interface ISysPermissionService extends IService<SysPermission> {
-    /**
-     * 通过角色id查询权限信息
-     * @param roleId
-     * @return
-     */
-    List<SysPermission> listByRoleId(int roleId);
-    /**
-     * 通过角色名查询权限信息
-     * @param roleName
-     * @return
-     */
-    List<SysPermission> listByRoleName(String roleName);
 }

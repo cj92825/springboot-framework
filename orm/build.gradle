@@ -13,6 +13,7 @@ dependencies {
     compile "com.baomidou:mybatis-plus-generator:${mybatis_plus_boot_version}"
     compile "org.freemarker:freemarker:${freemarker_version}"
     implementation "p6spy:p6spy:3.8.1"
+    implementation "io.springfox:springfox-swagger2:${swagger_version}"
 }
 
 
