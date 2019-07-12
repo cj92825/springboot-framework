@@ -41,6 +41,7 @@ subprojects {
     dependencies {
         implementation "org.springframework.boot:spring-boot-starter"
         implementation "org.springframework.boot:spring-boot-starter-web"
+        implementation "org.springframework.boot:spring-boot-starter-actuator"
         implementation "org.projectlombok:lombok:1.18.2"
         implementation "com.alibaba:fastjson:${fastjson_version}"
         implementation "org.springframework.boot:spring-boot-starter-data-redis"

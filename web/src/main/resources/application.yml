@@ -15,8 +15,8 @@ spring:
 logging:
   file: spring.log
   level:
-    root: info
-    pers.cj.framwork: info
+    root: INFO
+    pers.cj.framwork: INFO
 
 #server:
 #  servlet:

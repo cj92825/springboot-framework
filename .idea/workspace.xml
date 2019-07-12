@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25f567a1-8f2d-4547-950f-09954a63011e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomInvalidSessionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomInvalidSessionStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/orm/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/entity/SysMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/mapper/SysMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/mapper/SysMenuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysPermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/ISysPermissionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysPermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysPermissionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysRolePermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysRolePermissionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/util/MysqlGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/util/MysqlGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysPermissionGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysPermissionGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysPermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysRolePermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysRolePermissionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysUserRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm/src/main/resources/mapper/orm/SysUserRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -92,6 +70,32 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="springboot" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot" type="f1a62948:ProjectNode" />
+                <item name="orm" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot" type="f1a62948:ProjectNode" />
+                <item name="orm" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot" type="f1a62948:ProjectNode" />
+                <item name="orm" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springboot" type="f1a62948:ProjectNode" />
+                <item name="orm" type="2d1252cf:ModuleNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -105,58 +109,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.7/26d2e8a615ae6d766bbaed952a9cc286f6860faf/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/ObjectMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="500" column="24" selection-start-line="500" selection-start-column="8" selection-end-line="500" selection-end-column="24" />
-              <folding>
-                <element signature="e#20594#20595#0" expanded="true" />
-                <element signature="e#20630#20631#0" expanded="true" />
-                <element signature="e#41259#41260#0" expanded="true" />
-                <element signature="e#41304#41305#0" expanded="true" />
-                <element signature="e#141711#141712#0" expanded="true" />
-                <element signature="e#141787#141788#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shihyuho/jackson-dynamic-filter/1.0.1/3d178822a15ec568508c9e619d947a0fc15dfb82/jackson-dynamic-filter-1.0.1-sources.jar!/com/github/shihyuho/jackson/databind/DynamicFilterResponseBodyAdvice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shihyuho/jackson-dynamic-filter/1.0.1/3d178822a15ec568508c9e619d947a0fc15dfb82/jackson-dynamic-filter-1.0.1-sources.jar!/com/github/shihyuho/jackson/databind/resolver/DynamicFilterResolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="18" column="43" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
-              <folding>
-                <element signature="e#1257#1272#0" />
-                <element signature="e#2267#2278#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomInvalidSessionStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="207">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="989">
+              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -164,17 +129,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="414">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.2.RELEASE/7361b2e28910f2202851c14d4115435b248f668c/spring-web-5.1.2.RELEASE-sources.jar!/org/springframework/http/converter/AbstractHttpMessageConverter.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="102" column="32" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="32" />
+            <state relative-caret-position="299">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-orm.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/build.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.1.0.RELEASE/d62288e578b128c1be43de91cf65d6922220befb/spring-boot-2.1.0.RELEASE-sources.jar!/org/springframework/boot/context/logging/LoggingApplicationListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="874">
+              <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -191,7 +179,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shihyuho/jackson-dynamic-filter/1.0.1/3d178822a15ec568508c9e619d947a0fc15dfb82/jackson-dynamic-filter-1.0.1-sources.jar!/com/github/shihyuho/jackson/databind/DynamicFilterProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="552">
               <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="e#1329#1330#0" expanded="true" />
@@ -204,7 +192,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.7/26d2e8a615ae6d766bbaed952a9cc286f6860faf/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="759">
               <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
               <folding>
                 <element signature="e#1451#1452#0" expanded="true" />
@@ -227,10 +215,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setH</find>
-      <find>Cookie</find>
-      <find>setHttpOnlyMethod</find>
-      <find>getAuthentication</find>
       <find>getCredentials</find>
       <find>authenticationManager</find>
       <find>permi</find>
@@ -257,6 +241,10 @@
       <find>HttpMessageNotReadableException</find>
       <find>_deserializationConfig</find>
       <find>Resolver</find>
+      <find>actuator</find>
+      <find>/sys</find>
+      <find>mapping</find>
+      <find>10011</find>
     </findStrings>
     <dirStrings>
       <dir>D:\study\framework\src\main\java</dir>
@@ -314,11 +302,11 @@
         <option value="$PROJECT_DIR$/orm/src/main/java/pers/cj/framework/orm/service/impl/SysUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/MenuController.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/util/JsonUtil.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/UserController.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomInvalidSessionStrategy.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -329,8 +317,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1924" />
-    <option name="y" value="96" />
+    <option name="x" value="1849" />
+    <option name="y" value="190" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -340,6 +328,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -350,51 +339,6 @@
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -426,27 +370,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="common" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -628,56 +551,11 @@
               <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.github.shihyuho:jackson-dynamic-filter:1.0.1" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.github.shihyuho:jackson-dynamic-filter:1.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="jackson-dynamic-filter-1.0.1.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.github.shihyuho:jackson-dynamic-filter:1.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="jackson-dynamic-filter-1.0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="databind" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.github.shihyuho:jackson-dynamic-filter:1.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="jackson-dynamic-filter-1.0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="databind" type="462c0819:PsiDirectoryNode" />
-              <item name="resolver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.github.shihyuho:jackson-dynamic-filter-spring-boot-starter:1.0.1" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.github.shihyuho:jackson-dynamic-filter-spring-boot-starter:1.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="jackson-dynamic-filter-spring-boot-starter-1.0.1.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.github.shihyuho:jackson-dynamic-filter-spring-boot-starter:1.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="jackson-dynamic-filter-spring-boot-starter-1.0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -863,6 +741,9 @@
       <workItem from="1562135705107" duration="6917000" />
       <workItem from="1562202749695" duration="14177000" />
       <workItem from="1562289620142" duration="17742000" />
+      <workItem from="1562660465651" duration="1280000" />
+      <workItem from="1562722512846" duration="568000" />
+      <workItem from="1562812684160" duration="1778000" />
     </task>
     <servers />
   </component>
@@ -887,7 +768,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379558000" />
+    <option name="totallyTimeSpent" value="385185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -899,10 +780,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49912128" visible="true" weight="0.27292112" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49912128" visible="true" weight="0.282516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -913,11 +794,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.40130153" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37527114" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" visible="true" weight="0.32212582" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" visible="true" weight="0.19956616" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4989339" weight="0.15075922" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4989339" weight="0.46529284" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -1010,20 +891,6 @@
     <SUITE FILE_PATH="coverage/springboot$framework_web__build_.ic" NAME="framework:web [build] Coverage Results" MODIFIED="1560392433566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomExpiredSessionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/util/JsonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shihyuho/jackson-dynamic-filter/1.0.1/3d178822a15ec568508c9e619d947a0fc15dfb82/jackson-dynamic-filter-1.0.1-sources.jar!/com/github/shihyuho/jackson/databind/resolver/FilterOutAllExceptResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -1231,16 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.0.RELEASE/fe4390ff7a5b04cae4eabadca60b6026ade138a1/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/jackson/JacksonProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1257,13 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="235" column="62" selection-start-line="235" selection-start-column="62" selection-end-line="235" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1326,7 +1176,7 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shihyuho/jackson-dynamic-filter/1.0.1/3d178822a15ec568508c9e619d947a0fc15dfb82/jackson-dynamic-filter-1.0.1-sources.jar!/com/github/shihyuho/jackson/databind/DynamicFilterResponseBodyAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1347,17 +1197,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shihyuho/jackson-dynamic-filter/1.0.1/3d178822a15ec568508c9e619d947a0fc15dfb82/jackson-dynamic-filter-1.0.1-sources.jar!/com/github/shihyuho/jackson/databind/resolver/DynamicFilterResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="18" column="43" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+          <folding>
+            <element signature="e#1257#1272#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomInvalidSessionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/pers/cj/framework/web/sys/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.1.0.RELEASE/d62288e578b128c1be43de91cf65d6922220befb/spring-boot-2.1.0.RELEASE-sources.jar!/org/springframework/boot/context/logging/LoggingApplicationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1368,20 +1259,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.7/26d2e8a615ae6d766bbaed952a9cc286f6860faf/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
-          <folding>
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shihyuho/jackson-dynamic-filter/1.0.1/3d178822a15ec568508c9e619d947a0fc15dfb82/jackson-dynamic-filter-1.0.1-sources.jar!/com/github/shihyuho/jackson/databind/DynamicFilterProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="552">
           <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding>
             <element signature="e#1329#1330#0" expanded="true" />
@@ -1390,21 +1270,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/pers/cj/framework/api/config/WebMvcConfig.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.7/26d2e8a615ae6d766bbaed952a9cc286f6860faf/jackson-databind-2.9.7-sources.jar!/com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+        <state relative-caret-position="759">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
           <folding>
-            <element signature="e#1257#1272#0" />
-            <element signature="e#2267#2278#0" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/pers/cj/framework/common/security/config/CustomInvalidSessionStrategy.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application-orm.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="461">
+          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
         </state>
       </provider>
     </entry>
