@@ -1,0 +1,6 @@
+FROM openjdk
+MAINTAINER cj
+WORKDIR /apps/springboot
+ADD build/distributions/web-boot-1.0-SNAPSHOT/ web-boot-1.0-SNAPSHOT/
+EXPOSE 10011
+ENTRYPOINT ["web-boot-1.0-SNAPSHOT/bin/web"]

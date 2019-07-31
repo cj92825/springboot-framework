@@ -18,4 +18,4 @@ fs:
     accessKeySecret: PyB67WlX8Mgp5duNsa8KJwiWldh58b
     bucketName: springboot-file
     path: file #自定义路径(在阿里云OSS存储空间里的目录，目录最前面不要加/)
-  filePath: d:/   #当enable为false时此项生效
+  filePath: d:/   #当aliOos.enable为false时此项生效

@@ -1,6 +1,7 @@
 package pers.cj.framework.common.security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.config.authentication.CachingUserDetailsService;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
