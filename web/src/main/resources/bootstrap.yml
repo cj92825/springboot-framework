@@ -1,0 +1,24 @@
+endpoint: acm.aliyun.com
+namespace: c754ea63-f940-4c94-b734-c935ae2b1817
+access-key: LTAIMbk9m1guOemq
+secret-key: PyB67WlX8Mgp5duNsa8KJwiWldh58b
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.134:8848
+      config:
+        file-extension: yml
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+#        endpoint: ${endpoint}
+#        namespace: ${namespace}
+#        access-key: ${access-key}
+#        secret-key: ${secret-key}
+
+  application:
+    name: springboot
+  profiles:
+    active: dev
+
+server:
+  port: 10011
